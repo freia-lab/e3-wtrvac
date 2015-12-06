@@ -32,7 +32,7 @@ cd "${TOP}"
 #############################################
 
 dbLoadDatabase "dbd/wtrvac-freia.dbd"
-wtrvac-freia_registerRecordDeviceDriver pdbbase
+wtrvac_freia_registerRecordDeviceDriver pdbbase
 
 < "${TOP}/iocBoot/iocwtrvac-freia/sddPreDriverConf.cmd"
 < "${TOP}/iocBoot/iocwtrvac-freia/userPreDriverConf.cmd"
