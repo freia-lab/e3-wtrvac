@@ -1,4 +1,4 @@
-#!../../bin/linux-x86_64/hnoss
+#!../../bin/linux-x86_64/wtrvac-freia
 #+======================================================================
 # $HeadURL: https://svnpub.iter.org/codac/iter/codac/dev/units/m-epics-iter-templates/tags/CODAC-CORE-4.1.0/templates/genericBoot/ioc/st.cmd $
 # $Id: st.cmd 35402 2013-04-07 15:41:49Z zagara $
@@ -31,14 +31,14 @@ cd "${TOP}"
 ## Register all support components         ##
 #############################################
 
-dbLoadDatabase "dbd/hnoss.dbd"
-hnoss_registerRecordDeviceDriver pdbbase
+dbLoadDatabase "dbd/wtrvac-freia.dbd"
+wtrvac-freia_registerRecordDeviceDriver pdbbase
 
-< "${TOP}/iocBoot/iochnoss/sddPreDriverConf.cmd"
-< "${TOP}/iocBoot/iochnoss/userPreDriverConf.cmd"
-< "${TOP}/iocBoot/iochnoss/threadSchedulingConf.cmd"
-< "${TOP}/iocBoot/iochnoss/dbToLoad.cmd"
-< "${TOP}/iocBoot/iochnoss/iochnoss-preSaveRestore.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/sddPreDriverConf.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/userPreDriverConf.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/threadSchedulingConf.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/dbToLoad.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/iocwtrvac-freia-preSaveRestore.cmd"
 
 #############################################
 ## IOC Logging                             ##
@@ -51,10 +51,10 @@ iocLogInit
 cd "${TOP}/db"
 iocInit
 
-< "${TOP}/iocBoot/iochnoss/iochnoss-postSaveRestore.cmd"
-< "${TOP}/iocBoot/iochnoss/sddSeqToLoad.cmd"
-< "${TOP}/iocBoot/iochnoss/seqToLoad.cmd"
-< "${TOP}/iocBoot/iochnoss/sddPostDriverConf.cmd"
-< "${TOP}/iocBoot/iochnoss/userPostDriverConf.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/iocwtrvac-freia-postSaveRestore.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/sddSeqToLoad.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/seqToLoad.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/sddPostDriverConf.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/userPostDriverConf.cmd"
 
 

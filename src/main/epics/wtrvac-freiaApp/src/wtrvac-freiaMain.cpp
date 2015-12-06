@@ -1,4 +1,4 @@
-/* hnossMain.cpp */
+/* wtrvac-freiaMain.cpp */
 /* Author:  Marty Kraimer Date:    17MAR2000 */
 
 #include <stddef.h>

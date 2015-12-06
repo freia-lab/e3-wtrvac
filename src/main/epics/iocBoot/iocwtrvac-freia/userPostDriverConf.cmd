@@ -3,4 +3,4 @@
 ####################################################################
 dbpf CstatH-2Kpumps:Ctrl:cCp2Local-evnt.PROC 0
 
-< "${TOP}/iocBoot/iochnoss/setDeadbands.cmd"
+< "${TOP}/iocBoot/iocwtrvac-freia/setDeadbands.cmd"
