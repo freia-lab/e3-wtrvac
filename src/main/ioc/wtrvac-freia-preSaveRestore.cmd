@@ -10,7 +10,7 @@ save_restoreSet_status_prefix("$(AUTOSAVE_SYSM_PV_PREFIX)")
 save_restoreSet_UseStatusPVs(1)
 
 # Debug-output level
-save_restoreSet_Debug(0)
+save_restoreSet_Debug(1)
 
 # Ok to save/restore save sets with missing values (no CA connection to PV)?
 save_restoreSet_IncompleteSetsOk(1)
@@ -23,7 +23,8 @@ save_restoreSet_NumSeqFiles(3)
 save_restoreSet_SeqPeriodInSeconds(300)
 
 # specify where save files should be
-set_savefile_path("$(EPICS_AUTOSAVE_VAR)/$(UNIT_NAME)")
+#set_savefile_path("$(EPICS_AUTOSAVE_VAR)/$(UNIT_NAME)")
+set_savefile_path("/opt/epics/autosave/wtrvac")
 
 # specify what save files should be restored.  Note these files must be
 # in the directory specified in set_savefile_path(), or, if that function
@@ -32,9 +33,9 @@ set_savefile_path("$(EPICS_AUTOSAVE_VAR)/$(UNIT_NAME)")
 # Save files associated with the request files 'auto-output.req' and
 # 'auto-input.req'.  These files are the standard way to use autosave 
  
-set_pass1_restoreFile("iochnoss.sav")
+set_pass1_restoreFile("ioc-wtrvac-freia.sav")
 
 # specify directories in which to to search for included request files
-set_requestfile_path("./")
+set_requestfile_path("$(REQUIRE_ioc-wtrvac-freia_PATH)/startup/")
 
-dbLoadRecords("$(EPICS_MODULES)/autosave/db/save_restoreStatus.db"), "P=$(AUTOSAVE_SYSM_PV_PREFIX)")
+dbLoadRecords("save_restoreStatus.db"), "P=$(AUTOSAVE_SYSM_PV_PREFIX)")

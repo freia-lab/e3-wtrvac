@@ -1,11 +1,11 @@
 require s7plc
 require autosave
 
-epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","hnoss:")
+epicsEnvSet("AUTOSAVE_SYSM_PV_PREFIX","wtrvac:")
 
 requireSnippet(userPreDriverConf-wtrvac-freia.cmd)
 requireSnippet(dbToLoad-wtrvac-freia.cmd)
-#requireSnippet(iochnoss-preSaveRestore.cmd)
+requireSnippet(wtrvac-freia-preSaveRestore.cmd)
 
 #############################################
 ## IOC initialization                      ##
@@ -13,7 +13,7 @@ requireSnippet(dbToLoad-wtrvac-freia.cmd)
 
 iocInit
 
-#requireSnippet(iochnoss-postSaveRestore.cmd)
+requireSnippet(wtrvac-freia-postSaveRestore.cmd)
 requireSnippet(userPostDriverConf-wtrvac-freia.cmd)
 
 
