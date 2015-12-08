@@ -23,6 +23,7 @@
 #<sendIntervall> : time to wait before sending new data to PLC [ms]
 
 #s7plcConfigure PLC:WTRVAC,192.168.10.10,2000,504,134,1,1000,500
-s7plcConfigure PLC:WTRVAC,127.0.0.1,2000,504,134,1,1000,500
+#s7plcConfigure PLC:WTRVAC,127.0.0.1,2000,504,134,1,1000,500
+s7plcConfigure PLC:WTRVAC,$(IP_ADDR),2000,504,134,1,1000,500
 
 
