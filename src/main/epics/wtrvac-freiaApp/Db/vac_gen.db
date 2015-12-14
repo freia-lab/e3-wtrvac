@@ -1,3 +1,31 @@
+# PLC connection status
+record (bi, "PLC-WTRVAC:status") {
+  field (DTYP, "S7plc stat")
+  field (INP,  "@PLC:WTRVAC")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "disconnected")
+  field (ONAM, "connected")
+  field (ZSV,  "MAJOR")
+  field (FLNK, "PLC-WTRVAC:status-counter")
+}
+
+record (calc, "PLC-WTRVAC:status-counter")
+{
+   field (INPA, "PLC-WTRVAC:status-counter")
+   field (CALC, "A+1")
+   field (FLNK, "PLC-WTRVAC:disconnect-counter")
+}
+
+record (calc, "PLC-WTRVAC:disconnect-counter")
+{
+   field (INPA, "PLC-WTRVAC:status")
+   field (INPB, "PLC-WTRVAC:disconnect-counter.LA")
+   field (INPC, "PLC-WTRVAC:disconnect-counter")
+   field (CALC, "(A=0&&B=1)?C+1:C")
+}
+
+
+
 # Vacuum system
 record(mbbi, "CstatH-Vac:TP001:sStatus") {
   field(DTYP, "S7plc")
