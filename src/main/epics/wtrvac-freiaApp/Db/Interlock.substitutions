@@ -1,5 +1,9 @@
 file "Interlock.template" { pattern
 {SYS,	SUBS,	DEV,	       OFFS1,	OFFS2, INIT_EVNT}
 {LLRF,	Cntrl,	SlowIntlk,     440, 	102, 7}
+{HPRF,	Esys,	ExtIntlkHNOSS, 444, 	104, 7}
+{HPRF,	Esys,	ExtIntlkLoad1, 444, 	106, 7}
+{HPRF,	Esys,	ExtIntlkLoad2, 444, 	108, 7}
+{HPRF,	Esys,	ExtIntlkCM,    444, 	110, 7}
 }
 

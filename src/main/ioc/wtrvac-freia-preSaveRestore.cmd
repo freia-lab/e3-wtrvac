@@ -36,6 +36,6 @@ set_savefile_path("/opt/epics/autosave/wtrvac")
 set_pass1_restoreFile("ioc-wtrvac-freia.sav")
 
 # specify directories in which to to search for included request files
-set_requestfile_path("$(REQUIRE_ioc-wtrvac-freia_PATH)/startup/")
+set_requestfile_path("$(REQUIRE_ioc_wtrvac_freia_PATH)/misc/")
 
 dbLoadRecords("save_restoreStatus.db"), "P=$(AUTOSAVE_SYSM_PV_PREFIX)")

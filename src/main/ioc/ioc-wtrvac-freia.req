@@ -10,6 +10,14 @@ CstatH-Vac:TP001:cRemote
 CstatH-SHe:FV309:cOn
 LLRF-Cntrl:SlowIntlk:cMask
 LLRF-Cntrl:SlowIntlk:cNoLatch
+HPRF-Esys:ExtIntlkHNOSS:cMask
+HPRF-Esys:ExtIntlkHNOSS:cNoLatch
+HPRF-Esys:ExtIntlkLoad1:cMask
+HPRF-Esys:ExtIntlkLoad1:cNoLatch
+HPRF-Esys:ExtIntlkLoad2:cMask
+HPRF-Esys:ExtIntlkLoad2:cNoLatch
+HPRF-Esys:ExtIntlkCM:cMask
+HPRF-Esys:ExtIntlkCM:cNoLatch
 #4511RT-TST-1:AOU8-JZ-CRC
 #4511RT-TST-1:AOU16-JZ-CRC
 #4511RT-TST-1:AOU32-JZ-CRC
