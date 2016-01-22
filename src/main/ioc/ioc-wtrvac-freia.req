@@ -18,6 +18,14 @@ HPRF-Esys:ExtIntlkLoad2:cMask
 HPRF-Esys:ExtIntlkLoad2:cNoLatch
 HPRF-Esys:ExtIntlkCM:cMask
 HPRF-Esys:ExtIntlkCM:cNoLatch
+HPRF-DBE:ExtIntlkHNOSS:cMask
+HPRF-DBE:ExtIntlkHNOSS:cNoLatch
+HPRF-DBE:ExtIntlkLoad1:cMask
+HPRF-DBE:ExtIntlkLoad1:cNoLatch
+HPRF-DBE:ExtIntlkLoad2:cMask
+HPRF-DBE:ExtIntlkLoad2:cNoLatch
+HPRF-DBE:ExtIntlkCM:cMask
+HPRF-DBE:ExtIntlkCM:cNoLatch
 #4511RT-TST-1:AOU8-JZ-CRC
 #4511RT-TST-1:AOU16-JZ-CRC
 #4511RT-TST-1:AOU32-JZ-CRC
