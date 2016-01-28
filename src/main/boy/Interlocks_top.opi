@@ -90,14 +90,6 @@
     <macros>
       <include_parent_macros>true</include_parent_macros>
       <P>LLRF-Cntrl:SlowIntlk</P>
-      <B0>FREIA Bunker Door Open</B0>
-      <B1></B1>
-      <B2></B2>
-      <B3></B3>
-      <B4></B4>
-      <B5></B5>
-      <B6></B6>
-      <B7>Test</B7>
     </macros>
     <resize_behaviour>1</resize_behaviour>
     <visible>true</visible>
@@ -239,14 +231,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkHNOSS</P>
-            <B0>RFSwitchBoard1 Sw9</B0>
-            <B1>RFSwitchBoard1 Sw13</B1>
-            <B2>Wtr Flow Guard3</B2>
-            <B3>Wtr Flow Guard4</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -311,14 +295,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkLoad1</P>
-            <B0>RFSwitchBoard1 Sw5</B0>
-            <B1>RFSwitchBoard1 Sw1</B1>
-            <B2>Wtr Flow Guard6</B2>
-            <B3>n.u.</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -383,14 +359,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkLoad2</P>
-            <B0>RFSwitchBoard1 Sw9</B0>
-            <B1>RFSwitchBoard1 Sw15</B1>
-            <B2>Wtr Flow Guard5</B2>
-            <B3>n.u.</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -455,14 +423,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkCM</P>
-            <B0>RFSwitchBoard1 Sw5</B0>
-            <B1>RFSwitchBoard1 Sw3</B1>
-            <B2>Wtr Flow Guard1</B2>
-            <B3>Wtr Flow Guard2</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -663,14 +623,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkHNOSS</P>
-            <B0>RFSwitchBoard1 Sw12</B0>
-            <B1>RFSwitchBoard1 Sw14</B1>
-            <B2>Wtr Flow Guard3</B2>
-            <B3>Wtr Flow Guard4</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -735,14 +687,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkLoad1</P>
-            <B0>RFSwitchBoard1 Sw8</B0>
-            <B1>RFSwitchBoard1 Sw2</B1>
-            <B2>Wtr Flow Guard6</B2>
-            <B3>n.u.</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -807,14 +751,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkLoad2</P>
-            <B0>RFSwitchBoard1 Sw12</B0>
-            <B1>RFSwitchBoard1 Sw14</B1>
-            <B2>Wtr Flow Guard5</B2>
-            <B3>n.u.</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>
@@ -879,14 +815,6 @@ $(pv_value)</tooltip>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkCM</P>
-            <B0>RFSwitchBoard1 Sw8</B0>
-            <B1>RFSwitchBoard1 Sw4</B1>
-            <B2>Wtr Flow Guard1</B2>
-            <B3>Wtr Flow Guard2</B3>
-            <B4>n.u.</B4>
-            <B5>n.u.</B5>
-            <B6>n.u</B6>
-            <B7>Test</B7>
           </macros>
           <Position>4</Position>
           <description></description>

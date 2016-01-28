@@ -74,3 +74,52 @@ record (bo, "$(SYS)-$(SUBS):$(DEV):cNoLatch-proc") {
   field(FLNK, "$(SYS)-$(SUBS):$(DEV):cNoLatch")
 }
 
+# Bit descriptions
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B0") {
+  field(DESC,"Interlock bit B0 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B0)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B1") {
+  field(DESC,"Interlock bit B1 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B1)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B2") {
+  field(DESC,"Interlock bit B2 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B2)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B3") {
+  field(DESC,"Interlock bit B3 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B3)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B4") {
+  field(DESC,"Interlock bit B4 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B4)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B5") {
+  field(DESC,"Interlock bit B5 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B5)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B6") {
+  field(DESC,"Interlock bit B6 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B6)")
+  field(PINI,"YES")
+}
+record (stringin, "$(SYS)-$(SUBS):$(DEV):sInp-B7") {
+  field(DESC,"Interlock bit B7 description")
+  field(DTYP, "Soft Channel")
+  field(VAL, "$(B7)")
+  field(PINI,"YES")
+}

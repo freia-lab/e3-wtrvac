@@ -39,7 +39,7 @@
     <enabled>true</enabled>
     <wuid>6bc625c4:14f3be44842:-6b96</wuid>
     <transparent>true</transparent>
-    <lock_children>true</lock_children>
+    <lock_children>false</lock_children>
     <scripts />
     <height>288</height>
     <border_width>1</border_width>
@@ -462,6 +462,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0 !=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B0</pv>
+        </rule>
       </rules>
       <bit>0</bit>
       <enabled>true</enabled>
@@ -485,7 +491,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B0)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -516,6 +522,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B1</pv>
+        </rule>
       </rules>
       <bit>1</bit>
       <enabled>true</enabled>
@@ -539,7 +551,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B1)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -570,6 +582,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0 != 0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B2</pv>
+        </rule>
       </rules>
       <bit>2</bit>
       <enabled>true</enabled>
@@ -593,7 +611,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B2)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -624,6 +642,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B3</pv>
+        </rule>
       </rules>
       <bit>3</bit>
       <enabled>true</enabled>
@@ -647,7 +671,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B3)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -678,6 +702,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B4</pv>
+        </rule>
       </rules>
       <bit>4</bit>
       <enabled>true</enabled>
@@ -701,7 +731,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B4)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -732,6 +762,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B5</pv>
+        </rule>
       </rules>
       <bit>5</bit>
       <enabled>true</enabled>
@@ -755,7 +791,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B5)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -786,6 +822,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B6</pv>
+        </rule>
       </rules>
       <bit>6</bit>
       <enabled>true</enabled>
@@ -809,7 +851,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B6)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
@@ -840,6 +882,12 @@ $(pv_value)</tooltip>
           </exp>
           <pv trig="true">$(pv_name).SIMM</pv>
         </rule>
+        <rule name="LabelRule" prop_id="label" out_exp="true">
+          <exp bool_exp="pv0!=0">
+            <value>pvStr0</value>
+          </exp>
+          <pv trig="true">$(P):sInp-B7</pv>
+        </rule>
       </rules>
       <bit>7</bit>
       <enabled>true</enabled>
@@ -863,7 +911,7 @@ $(pv_value)</tooltip>
       <border_color>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
-      <label>$(B7)</label>
+      <label>n.u.</label>
       <widget_type>Check Box</widget_type>
       <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
       <background_color>
