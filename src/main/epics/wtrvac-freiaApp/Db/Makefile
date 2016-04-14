@@ -30,6 +30,7 @@ DB += ArcDet.template
 DB += ArcDet.substitutions
 DB += Interlock.template
 DB += Interlock.substitutions
+DB += ADC_inputs.substitutions
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
