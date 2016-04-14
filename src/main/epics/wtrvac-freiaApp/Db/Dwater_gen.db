@@ -49,10 +49,28 @@ record(bi, "WtrC-Dwtr:P1:sRotating")  {
   alias("Rotating")
 }
 
-record(mbbiDirect, "HPRF-Distr:SwitchBoard:sSwitch") {
+record(mbbiDirect, "HPRF-Distr:SwitchBoard1:sSwitch") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/504 T=WORD")
   field (NOBT, "16")
+  field (SHFT, "0")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbiDirect, "HPRF-Distr:SwitchBoard2:sSwitch") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/653 T=BYTE")
+  field (NOBT, "2")
+  field (SHFT, "0")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(mbbiDirect, "HPRF-Distr:SwitchBoard3:sSwitch") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/654 T=BYTE")
+  field (NOBT, "2")
   field (SHFT, "0")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
