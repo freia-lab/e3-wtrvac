@@ -1,0 +1,9 @@
+record(bi, "$(P):WFGuard$(NR):sOK")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(OFFS) T=BYTE B=$(B)")
+  field(ZSV, "MAJOR")
+  field(ONAM, "Flow OK")
+  field(ZNAM, "Flow not OK")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}

@@ -11,3 +11,14 @@ file "Interlock.template" { pattern
 {HPRF,	DBE,	ExtIntlkCM,    472, 	118, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw4", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "","Test", 7}
 }
 
+file "Dwtr_WFG.template" { pattern
+{P,  		NR,	 OFFS,	B}
+{WtrC-Dwtr,	01	 506	0}
+{WtrC-Dwtr,	02	 506	1}
+{WtrC-Dwtr,	03	 506	2}
+{WtrC-Dwtr,	04	 506	3}
+{WtrC-Dwtr,	05	 506	4}
+{WtrC-Dwtr,	06	 506	5}
+{WtrC-Dwtr,	07	 506	6}
+{WtrC-Dwtr,	08	 506	7}
+}
