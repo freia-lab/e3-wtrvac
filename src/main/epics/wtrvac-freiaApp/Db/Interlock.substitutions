@@ -7,7 +7,7 @@ file "Interlock.template" { pattern
 {HPRF,	Esys,	ExtIntlkCM,    456, 	110, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw3", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "","Test", 7}
 {HPRF,	DBE,	ExtIntlkHNOSS, 460, 	112, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard3", "Wtr Flow Guard4", "", "", "","Test", 7}
 {HPRF,	DBE,	ExtIntlkLoad1, 464, 	114, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw2", "Wtr Flow Guard6", "", "", "", "","Test", 7}
-{HPRF,	DBE,	ExtIntlkLoad2, 468, 	116, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard5", "", "", "", "","Test", 7}
+{HPRF,	DBE,	ExtIntlkLoad2, 468, 	116, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw16", "Wtr Flow Guard5", "", "", "", "","Test", 7}
 {HPRF,	DBE,	ExtIntlkCM,    472, 	118, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw4", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "","Test", 7}
 }
 
