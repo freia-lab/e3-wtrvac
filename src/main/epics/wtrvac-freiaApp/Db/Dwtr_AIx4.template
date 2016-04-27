@@ -7,6 +7,10 @@ record(ai, "$(P):s$(SIG)") {
   field(EGU, "$(EGU)")
   field(LOPR, "$(LOPR)")
   field(HOPR, "$(HOPR)")
+  field (LLSV, "MAJOR")
+  field (HHSV, "MAJOR")
+  field (LSV, "MINOR")
+  field (HSV, "MINOR")
 }
 
 record(mbbi, "$(P):s$(SIG)-stat") {
