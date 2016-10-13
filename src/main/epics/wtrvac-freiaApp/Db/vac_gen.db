@@ -229,3 +229,33 @@ record(bo, "CstatH-SHe:FV309:cOn-proc") {
   field(PINI, "NO")
   field(FLNK, "CstatH-SHe:FV309:cOn")
 }
+
+# FREIA bunker clearing state
+
+record (mbbi, "RadProt-Bunker1:Clearing:sState") {
+  field(DESC, "FREIA clearing procedure states")
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/656 T=WORD")
+  field (SCAN, "I/O Intr")
+  field (NOBT, 16)
+  field (ONVL, 1)
+  field (ONST, "INIT")
+  field (TWVL, 2)
+  field (TWST, "NOT CLEARED; DC")
+  field (THVL, 3)
+  field (THST, "NOT CLEARED; DO")
+  field (FRVL, 4)
+  field (FRST, "CLEARING(4); DO")
+  field (FVVL, 5)
+  field (FVST, "CLEARING(5); DC")
+  field (SXVL, 6)
+  field (SXST, "CLEARING(6); BP")
+  field (SVVL, 7)
+  field (SVST, "CLEARING(7); BR")
+  field (EIVL, 8)
+  field (EIST, "CLEARING(8); DO")
+  field (NIVL, 9)
+  field (NIST, "CLEARING(9); DC")
+  field (TEVL, 10)
+  field (TEST, "CLEARED")
+}

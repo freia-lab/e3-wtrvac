@@ -73,7 +73,7 @@
     </font>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.linkingContainer" version="1.0.0">
-    <opi_file>helper-opi-files/Slow_inerlocks.opi</opi_file>
+    <opi_file>helper-opi-files/Slow_interlocks.opi</opi_file>
     <border_style>3</border_style>
     <tooltip></tooltip>
     <rules />
@@ -227,7 +227,7 @@ $(pv_value)</tooltip>
       <name>LED_1</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkHNOSS</P>
@@ -291,7 +291,7 @@ $(pv_value)</tooltip>
       <name>LED_2</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkLoad1</P>
@@ -355,7 +355,7 @@ $(pv_value)</tooltip>
       <name>LED_3</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkLoad2</P>
@@ -419,7 +419,7 @@ $(pv_value)</tooltip>
       <name>LED_4</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-Esys:ExtIntlkCM</P>
@@ -619,7 +619,7 @@ $(pv_value)</tooltip>
       <name>LED_1</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkHNOSS</P>
@@ -683,7 +683,7 @@ $(pv_value)</tooltip>
       <name>LED_2</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkLoad1</P>
@@ -747,7 +747,7 @@ $(pv_value)</tooltip>
       <name>LED_3</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkLoad2</P>
@@ -811,7 +811,7 @@ $(pv_value)</tooltip>
       <name>LED_4</name>
       <actions hook="true" hook_all="false">
         <action type="OPEN_OPI_IN_VIEW">
-          <path>helper-opi-files/Slow_inerlocks.opi</path>
+          <path>helper-opi-files/Slow_interlocks.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
             <P>HPRF-DBE:ExtIntlkCM</P>
