@@ -1,12 +1,12 @@
 EXCLUDE_ARCHS += eldk
-EXCLUDE_VERSIONS = 3.15.2 3.15.4
+#EXCLUDE_VERSIONS = 3.15.2 3.15.4
 
 include ${EPICS_ENV_PATH}/module.Makefile
 
 
 PROJECT = ioc_wtrvac_freia
-EPICSVERSION = 3.14.15.2
-EPICS_VERSION = 3.14.15.2
+#EPICSVERSION = 3.14.15.2
+#EPICS_VERSION = 3.14.15.2
 
 STARTUPS = $(wildcard src/main/ioc/*.cmd)
 

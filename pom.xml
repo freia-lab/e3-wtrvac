@@ -66,6 +66,7 @@
                         <package name="opi">
                             <include type="boy" file="*" />
                             <include file="Hnoss-top.opi" topopi="true" type="boy"/>
+                            <include type="file" source="/main/boy/Wtr_T+C.plt" target="opi/boy/${project.artifactId}/" />
  #                           <include type="databrowser" file="*" />
  #                           <include type="boy" file="*-SDDMain.opi" topopi="true" />
                         </package>
