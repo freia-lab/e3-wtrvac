@@ -259,3 +259,62 @@ record (mbbi, "RadProt-Bunker1:Clearing:sState") {
   field (TEVL, 10)
   field (TEST, "CLEARED")
 }
+
+# APS Status of the RF stations for controlling the "High Voltage" sign
+
+#record (bo, "HPRF-DBE1:APS:sOn-copy") {
+#  field (OMSL, "closed_loop")
+#  field (DOL, "HPRF-DBE1:APS:sOn MSI")
+#  field (DTYP, "S7plc")
+#  field (SCAN, "Passive")
+#  field (OUT,"@PLC:WTRVAC/134 T=BYTE B=0")
+#}
+#record (mbbo, "HPRF-DBE1:APS:sOn-SEVR") {
+#  field (OMSL, "closed_loop")
+#  field (DOL, "HPRF-DBE1:APS:sOn-copy.SEVR")
+#  field (NOBT, 2)
+#  field (SHFT, 1)
+#  field (DTYP, "S7plc")
+#  field (SCAN, "Passive")
+#  field (OUT,"@PLC:WTRVAC/134 T=BYTE")
+#}
+
+record (calcout, "DBE:APS-sOn:changed") {
+  field (SCAN, "1 second")
+  field (INPA, "HPRF-DBE1:APS:sOn MSI")
+  field (INPB, "HPRF-DBE2:APS:sOn MSI")
+  field (INPC, "DBE:APS-sOn:changed.SEVR")
+  field (CALC, "A+2*B+4*C")
+  field (OOPT, "On Change")
+  field (OUT, "HPRF-DBE:APS:STAT PP")
+}
+
+record (mbbo, "HPRF-DBE:APS:STAT") {
+  field (OMSL, "closed_loop")
+  field (DOL, "DBE:APS-sOn:changed")
+  field (NOBT, 4)
+  field (SHFT, 0)
+  field (DTYP, "S7plc")
+  field (SCAN, "Passive")
+  field (OUT,"@PLC:WTRVAC/134 T=BYTE")
+}
+
+record (calcout, "Esys:APS-sOn:changed") {
+  field (SCAN, "1 second")
+  field (INPA, "HPRF-Esys:hpa1:sStat1 MSI")
+  field (INPB, "HPRF-Esys:hpa2:sStat1 MSI")
+  field (INPC, "Esys:APS-sOn:changed.SEVR")
+  field (CALC, "((A&512)>>9)+((B&512)>>8)+4*C")
+  field (OOPT, "On Change")
+  field (OUT, "HPRF-Esys:APS:STAT PP")
+}
+
+record (mbbo, "HPRF-Esys:APS:STAT") {
+  field (OMSL, "closed_loop")
+  field (DOL, "Esys:APS-sOn:changed")
+  field (NOBT, 4)
+  field (SHFT, 4)
+  field (DTYP, "S7plc")
+  field (SCAN, "Passive")
+  field (OUT,"@PLC:WTRVAC/134 T=BYTE")
+}
