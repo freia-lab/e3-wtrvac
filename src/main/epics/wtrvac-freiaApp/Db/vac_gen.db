@@ -304,7 +304,8 @@ record (calcout, "Esys:APS-sOn:changed") {
   field (INPA, "HPRF-Esys:hpa1:sStat1 MSI")
   field (INPB, "HPRF-Esys:hpa2:sStat1 MSI")
   field (INPC, "Esys:APS-sOn:changed.SEVR")
-  field (CALC, "((A&512)>>9)+((B&512)>>8)+4*C")
+  field (INPD, "16777216")
+  field (CALC, "((A&D)>>24)+((B&D)>>23)+4*C")
   field (OOPT, "On Change")
   field (OUT, "HPRF-Esys:APS:STAT PP")
 }
