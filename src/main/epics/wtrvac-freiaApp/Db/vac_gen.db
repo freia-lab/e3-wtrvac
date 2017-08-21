@@ -230,6 +230,68 @@ record(bo, "CstatH-SHe:FV309:cOn-proc") {
   field(FLNK, "CstatH-SHe:FV309:cOn")
 }
 
+# New reheater valves
+
+record(bo, "CstatH-SHe:FV560:cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/96 T=BYTE B=1")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  field(PINI, "NO")
+}
+record(bo, "CstatH-SHe:FV560:cOn-proc") {
+  field(DTYP, "Soft Channel")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(PINI, "NO")
+  field(FLNK, "CstatH-SHe:FV560:cOn")
+}
+
+record(bo, "CstatH-SHe:FV561:cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/96 T=BYTE B=2")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  field(PINI, "NO")
+}
+record(bo, "CstatH-SHe:FV561:cOn-proc") {
+  field(DTYP, "Soft Channel")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(PINI, "NO")
+  field(FLNK, "CstatH-SHe:FV561:cOn")
+}
+
+record(bo, "CstatH-SHe:FV562:cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/96 T=BYTE B=3")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  field(PINI, "NO")
+}
+record(bo, "CstatH-SHe:FV562:cOn-proc") {
+  field(DTYP, "Soft Channel")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(PINI, "NO")
+  field(FLNK, "CstatH-SHe:FV562:cOn")
+}
+
+record(bo, "CstatH-SHe:FV563:cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/96 T=BYTE B=4")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  field(PINI, "NO")
+}
+record(bo, "CstatH-SHe:FV563:cOn-proc") {
+  field(DTYP, "Soft Channel")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(PINI, "NO")
+  field(FLNK, "CstatH-SHe:FV563:cOn")
+}
+
 # FREIA bunker clearing state
 
 record (mbbi, "RadProt-Bunker1:Clearing:sState") {
