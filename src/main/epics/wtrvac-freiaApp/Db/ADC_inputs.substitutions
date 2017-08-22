@@ -12,4 +12,8 @@ file "Dwtr_AIx4.template" { pattern
 {"WtrC-Dwtr:PwrCpl-TT02", RdV,	550,   544        4,     0	50,   "ᵒC",1}
 {"WtrC-Dwtr:PwrCpl-TT03", RdV,	554,   545        0,     0	50,   "ᵒC",1}
 {"WtrC-Dwtr:PwrCpl-TT04", RdV,	558,   545        4,     0	50,   "ᵒC",1}
+{"WtrC-Dwtr:Kly-FT01", 	  RdV,	564,   562        0,     0	500,  "l/h",2}
+{"WtrC-Dwtr:Kly-FT02", 	  RdV,	568,   562        4,     0	10,   "l/h",2}
+{"WtrC-Dwtr:Kly-FT03",	  RdV,	572,   563        0,     0	50,   "l/h",2}
+{"WtrC-Dwtr:Kly-FT04", 	  RdV,	576,   563        4,     0	50,   "l/h",2}
 }
