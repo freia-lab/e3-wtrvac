@@ -87,7 +87,7 @@ WtrC-Dwtr:PwrCpl-FT04:sRdV.LOLO
 WtrC-Dwtr:PwrCpl-FT04:sRdV.LOW
 WtrC-Dwtr:PwrCpl-FT04:sRdV.HIHI
 WtrC-Dwtr:PwrCpl-FT04:sRdV.HIGH
-CstatH-SHe:FV560:cOn
-CstatH-SHe:FV561:cOn
-CstatH-SHe:FV562:cOn
-CstatH-SHe:FV563:cOn
+CstatH-RHtr:FV560:cOn
+CstatH-RHtr:FV561:cOn
+CstatH-RHtr:FV562:cOn
+CstatH-RHtr:FV563:cOn

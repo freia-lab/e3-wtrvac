@@ -1,8 +1,8 @@
 file "valve_stat.template" { pattern
-{P,	        V,	  OFFS,	  B_ON,	ONAM_ON,   ONAM_OFF}
-{"CstatH-RHtr", "FV560",  "507",  "0",	"Open",	   "Closed" }
-{"CstatH-RHtr", "FV561",  "507",  "2",	"Open",	   "Closed" }
-{"CstatH-RHtr", "FV562",  "507",  "4",	"Open",	   "Closed" }
-{"CstatH-RHtr", "FV563",  "507",  "6",	"Open",	   "Closed" }
+{P,	        V,	  OFFS,	  B_ON,	B_OFF, ONAM_ON,   ONAM_OFF}
+{"CstatH-RHtr", "FV560",  "507",  "0",	"1",   "Open",	   "Closed" }
+{"CstatH-RHtr", "FV561",  "507",  "2",	"3",   "Open",	   "Closed" }
+{"CstatH-RHtr", "FV562",  "507",  "4",	"5",   "Open",	   "Closed" }
+{"CstatH-RHtr", "FV563",  "507",  "6",	"7",   "Open",	   "Closed" }
 }
 

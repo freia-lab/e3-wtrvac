@@ -1,20 +1,22 @@
-#The status bits must be at the same byte offset and the first bit must be sOn
+# The status bits must be at the same byte offset and the first bit must be sOn
 record(bi, "$(P):$(V):sOn")  {
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS) T=BYTE B=$(B_ON)")
-  field(ONAM, "$(ONAM_ON)")
+  field(ONAM, "Switch closed")
+  field(ZNAM, "Switch open")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
 }
 record(bi, "$(P):$(V):sOff")  {
   field(DTYP, "S7plc")
-  field(INP, "@PLC:WTRVAC/$(OFFS) T=BYTE B=$(B_ON)+1")
-  field(ONAM, "$(ONAM_OFF)")
+  field(INP, "@PLC:WTRVAC/$(OFFS) T=BYTE B=$(B_OFF)")
+  field(ONAM, "Switch closed")
+  field(ZNAM, "Switch open")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
 }
 
-record (mbbi, "$(P):$(V):VisuSate" {
+record (mbbi, "$(P):$(V):VisuState") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS) T=BYTE")
   field(NOBT, "2")
@@ -27,7 +29,7 @@ record (mbbi, "$(P):$(V):VisuSate" {
   field(THVL,"3")
   field(ZRST,"Both open")
   field(ONST,"$(ONAM_ON)")
-  field(TWST,"$(ONAM_OFF")
+  field(TWST,"$(ONAM_OFF)")
   field(THST,"Both closed")
   field(ZRSV,"MAJOR")
   field(THSV,"MAJOR")
