@@ -28,6 +28,8 @@ HPRF-DBE:ExtIntlkCM:cMask
 HPRF-DBE:ExtIntlkCM:cNoLatch
 HPRF-PwrCpl:WtrCIntlk:cMask
 HPRF-PwrCpl:WtrCIntlk:cNoLatch
+HPRF-Kly:WtrCIntlk:cMask
+HPRF-Kly:WtrCIntlk:cNoLatch
 Env-Bunker1:QT001:sRdV.LOLO
 Env-Bunker1:QT001:sRdV.LOW
 Env-Bunker1:QT001:sRdV.HIHI
