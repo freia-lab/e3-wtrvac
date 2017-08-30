@@ -1,0 +1,144 @@
+# Deionized water cooling system
+
+record(bi, "$(P):sFault")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS1) T=BYTE B=2")
+  field(OSV, "MAJOR")
+  field(ONAM, "Fault")
+  field(ZNAM, "NoFault")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "$(P):sWarn")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS1) T=BYTE B=3")
+  field(OSV, "MINOR")
+  field(ONAM, "Warning")
+  field(ZNAM, "NoWarning")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "$(P):sAtMinSpeed")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS1) T=BYTE B=5")
+  field(ONAM, "AtMinSpeed")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "$(P):sAtMaxSpeed")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS1) T=BYTE B=7")
+  field(ONAM, "AtMaxSpeed")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "$(P):sSPinfluenced")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS2) T=BYTE B=4")
+  field(ONAM, "SP_Influenced")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+record(bi, "$(P):sRotating")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS2) T=BYTE B=6")
+  field(ONAM, "Rotating")
+  field(ZNAM, "Not_Rotating")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+record(ai, "$(P):sWarnCode")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS4) T=BYTE")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+record(ai, "$(P):sFaultCode")  {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS5) T=BYTE")
+  field(PINI, "YES")
+  field(SCAN, "I/O Intr")
+}
+
+# Input/output records
+
+record(mbbi, "$(P):sOpMode") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS3) T=BYTE")
+  field(NOBT, "8")
+  field(ZRVL, "0")
+  field(ZRST, "AutoControl")
+  field(ONVL, "4")
+  field(ONST, "OpenLoopMin")
+  field(TWVL, "6")
+  field(TWST, "OpenLoopMax")
+  field(PINI, "YES")
+  field(FLNK, "$(P):cOpMode-rbk")
+  field(SCAN, "I/O Intr")
+}
+
+record(calcout, "$(P):cOpMode-rbk") {
+  field(INPA, "$(P):sOpMode")
+  field(CALC, "A")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(OUT, "$(P):cOpMode PP")
+}
+
+record(mbbo, "$(P):cOpMode") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/$(cOFFS3) T=BYTE")
+  field(NOBT, "8")
+  field(ZRVL, "0")
+  field(ZRST, "AutoControl")
+  field(ONVL, "4")
+  field(ONST, "OpenLoopMin")
+  field(TWVL, "6")
+  field(TWST, "OpenLoopMax")
+  field(PINI, "NO")
+}
+
+
+
+record(ai, "$(P):sSetPoint") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/$(sOFFS6) T=FLOAT")
+  field(PREC, 1)
+  field(EGU, "%")
+  field(LOPR, "0")
+  field(HOPR, "100")
+  field(PINI, "YES")
+  field(FLNK, "$(P):cSetPoint-rbk")
+  field(SCAN, "I/O Intr")
+}
+
+record(calcout, "$(P):cSetPoint-rbk") {
+  field(INPA, "$(P):sSetPoint")
+  field(CALC, "A")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(OUT, "$(P):cSetPoint PP")
+}
+
+record(ao, "$(P):cSetPoint") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/$(cOFFS6) T=FLOAT")
+  field(PREC, 1)
+  field(EGU, "%")
+  field(LOPR, "0")
+  field(HOPR, "100")
+  field(PINI, "NO")
+}
+
+
+# Output records
+
+record(bo, "$(P):cmdReset") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/$(cOFFS1) T=BYTE B=2")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Reset")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+}
