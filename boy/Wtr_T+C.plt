@@ -137,7 +137,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>rdb</name>
-                <url>jdbc:postgresql://localhost/css_archive_3_0_0</url>
+                <url>pbraw://130.238.200.137:17668/retrieval</url>
                 <key>1</key>
             </archive>
         </pv>
@@ -159,7 +159,7 @@
             <request>OPTIMIZED</request>
             <archive>
                 <name>rdb</name>
-                <url>jdbc:postgresql://localhost/css_archive_3_0_0</url>
+                <url>pbraw://130.238.200.137:17668/retrieval</url>
                 <key>1</key>
             </archive>
         </pv>
