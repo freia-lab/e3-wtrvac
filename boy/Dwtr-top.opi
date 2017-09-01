@@ -2294,13 +2294,13 @@ circuit</text>
       <align_to_nearest_second>false</align_to_nearest_second>
       <auto_size>true</auto_size>
       <background_color>
-        <color name="IO Background" red="255" green="255" blue="205" />
+        <color red="240" green="240" blue="240" />
       </background_color>
       <border_color>
-        <color name="IO Border" red="215" green="215" blue="215" />
+        <color red="0" green="128" blue="255" />
       </border_color>
       <border_style>0</border_style>
-      <border_width>2</border_width>
+      <border_width>1</border_width>
       <crop_bottom>0</crop_bottom>
       <crop_left>0</crop_left>
       <crop_right>0</crop_right>
@@ -2310,14 +2310,14 @@ circuit</text>
       <flip_horizontal>false</flip_horizontal>
       <flip_vertical>false</flip_vertical>
       <font>
-        <opifont.name fontName="arial" height="10" style="0" pixels="false">IO Normal</opifont.name>
+        <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
       </font>
       <foreground_color>
-        <color name="IO InputPV Fg" red="0" green="32" blue="92" />
+        <color red="192" green="192" blue="192" />
       </foreground_color>
       <height>36</height>
-      <image_file>../SymbolLibrary/SVG/Fluid/Pumps/PL General.svg</image_file>
-      <name>Image </name>
+      <image_file>../SymbolLibrary/PNG/Fluid/Pumps/PL General.png</image_file>
+      <name>Image</name>
       <no_animation>false</no_animation>
       <permutation_matrix>
         <row>
@@ -2329,14 +2329,7 @@ circuit</text>
           <col>1.0</col>
         </row>
       </permutation_matrix>
-      <rules>
-        <rule name="BorderRule" prop_id="border_style" out_exp="false">
-          <exp bool_exp="pv0==1">
-            <value>9</value>
-          </exp>
-          <pv trig="true">$(pv_name).SIMM</pv>
-        </rule>
-      </rules>
+      <rules />
       <scale_options>
         <width_scalable>true</width_scalable>
         <height_scalable>true</height_scalable>
@@ -2344,15 +2337,14 @@ circuit</text>
       </scale_options>
       <scripts />
       <stretch_to_fit>false</stretch_to_fit>
-      <tooltip>$(pv_name)
-$(pv_value)</tooltip>
+      <tooltip></tooltip>
       <transparency>true</transparency>
       <visible>true</visible>
       <widget_type>Image</widget_type>
       <width>36</width>
-      <wuid>-4216a91f:15e376b8ed4:-7f81</wuid>
-      <x>65</x>
-      <y>144</y>
+      <wuid>-4216a91f:15e376b8ed4:-7737</wuid>
+      <x>70</x>
+      <y>103</y>
     </widget>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
