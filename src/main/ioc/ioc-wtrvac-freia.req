@@ -4,7 +4,7 @@ CstatH-2Kpumps:Ctrl-Pressure:cSetV
 CstatH-2Kpumps:Ctrl:cAuto
 CstatH-Vac:TP001:cLowSpeedSP
 CstatH-Vac:TP001:cHiSpeedSP
-CstatH-Vac:TP001:cSoftStart
+CstatH-Vac:TP001:cNormalStart
 CstatH-Vac:TP001:cLowSpeed
 CstatH-Vac:TP001:cRemote
 CstatH-SHe:FV309:cOn

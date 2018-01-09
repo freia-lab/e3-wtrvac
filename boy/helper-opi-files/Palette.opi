@@ -1532,62 +1532,6 @@ $(pv_value)</tooltip>
     <x>390</x>
     <y>229</y>
   </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <arrow_length>20</arrow_length>
-    <arrows>0</arrows>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="30" green="144" blue="255" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fill_arrow>true</fill_arrow>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <height>1</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_style>0</line_style>
-    <line_width>3</line_width>
-    <name>Polyline</name>
-    <points>
-      <point x="469" y="205" />
-      <point x="535" y="205" />
-    </points>
-    <pv_name></pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Polyline</widget_type>
-    <width>67</width>
-    <wuid>-4f9462ce:15e0974a007:-6e48</wuid>
-    <x>469</x>
-    <y>205</y>
-  </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.groupingContainer" version="1.0.0">
     <actions hook="false" hook_all="false" />
     <background_color>
@@ -1606,7 +1550,7 @@ $(pv_value)</tooltip>
     <foreground_color>
       <color red="192" green="192" blue="192" />
     </foreground_color>
-    <height>37</height>
+    <height>47</height>
     <lock_children>false</lock_children>
     <macros>
       <include_parent_macros>true</include_parent_macros>
@@ -1625,7 +1569,7 @@ $(pv_value)</tooltip>
     <transparent>true</transparent>
     <visible>true</visible>
     <widget_type>Grouping Container</widget_type>
-    <width>37</width>
+    <width>47</width>
     <wuid>-4f9462ce:15e0974a007:-76f9</wuid>
     <x>480</x>
     <y>182</y>
@@ -1655,7 +1599,7 @@ $(pv_value)</tooltip>
         <color name="IO Border" red="215" green="215" blue="215" />
       </border_color>
       <border_style>15</border_style>
-      <border_width>0</border_width>
+      <border_width>5</border_width>
       <crop_bottom>0</crop_bottom>
       <crop_left>0</crop_left>
       <crop_right>0</crop_right>
@@ -1672,7 +1616,7 @@ $(pv_value)</tooltip>
       <foreground_color>
         <color name="IO Foreground" red="0" green="0" blue="0" />
       </foreground_color>
-      <height>36</height>
+      <height>46</height>
       <image_file>../../SymbolLibrary/PNG/Fluid/Valves/VG 2 way-Valves On-Off On.png</image_file>
       <name>FV</name>
       <no_animation>false</no_animation>
@@ -1710,7 +1654,7 @@ $(pv_value)</tooltip>
       <transparency>true</transparency>
       <visible>true</visible>
       <widget_type>Boolean Symbol Monitor</widget_type>
-      <width>36</width>
+      <width>46</width>
       <wuid>-4f9462ce:15e0974a007:-7fbb</wuid>
       <x>0</x>
       <y>0</y>

@@ -155,19 +155,19 @@ record(bo, "CstatH-Vac:TP001:cLowSpeed-proc") {
   field(FLNK, "CstatH-Vac:TP001:cLowSpeed")
 }
 
-record(bo, "CstatH-Vac:TP001:cSoftStart") {
+record(bo, "CstatH-Vac:TP001:cNormalStart") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:WTRVAC/40 T=BYTE B=5")
-  field(ZNAM, "NormalStart")
-  field(ONAM, "SoftStart")
+  field(ZNAM, "SoftStart")
+  field(ONAM, "NormalStart")
   field(PINI, "NO")
 }
-record(bo, "CstatH-Vac:TP001:cSoftStart-proc") {
+record(bo, "CstatH-Vac:TP001:cNormalStart-proc") {
   field(DTYP, "Soft Channel")
   field(SCAN, "Event")
   field(EVNT, "$(INIT_EVNT)")
   field(PINI, "NO")
-  field(FLNK, "CstatH-Vac:TP001:cSoftStart")
+  field(FLNK, "CstatH-Vac:TP001:cNormalStart")
 }
 
 record(ao, "CstatH-Vac:TP001:cHiSpeedSP") {
