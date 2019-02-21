@@ -10,7 +10,7 @@
   <background_color>
     <color red="240" green="240" blue="240" />
   </background_color>
-  <boy_version>5.1.0.201610181352</boy_version>
+  <boy_version>5.1.0</boy_version>
   <foreground_color>
     <color red="192" green="192" blue="192" />
   </foreground_color>
@@ -56,21 +56,77 @@
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="255" green="0" blue="0" />
     </foreground_color>
-    <height>167</height>
+    <height>1</height>
     <horizontal_fill>false</horizontal_fill>
     <line_style>0</line_style>
     <line_width>10</line_width>
-    <name>Polyline_21</name>
+    <name>Polyline_50</name>
     <points>
-      <point x="138" y="338" />
-      <point x="438" y="338" />
-      <point x="438" y="172" />
+      <point x="487" y="221" />
+      <point x="710" y="221" />
+    </points>
+    <pv_name>$(P).BF</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Polyline</widget_type>
+    <width>224</width>
+    <wuid>-74eb494d:1690fb1bda3:-7be1</wuid>
+    <x>487</x>
+    <y>221</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <arrow_length>30</arrow_length>
+    <arrows>0</arrows>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="114" blue="160" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="85" green="87" blue="83" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill_arrow>true</fill_arrow>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <height>46</height>
+    <horizontal_fill>false</horizontal_fill>
+    <line_style>0</line_style>
+    <line_width>10</line_width>
+    <name>Polyline_46</name>
+    <points>
+      <point x="132" y="128" />
+      <point x="432" y="128" />
+      <point x="432" y="173" />
     </points>
     <pv_name>$(P).BF</pv_name>
     <pv_value />
@@ -88,9 +144,66 @@ $(pv_value)</tooltip>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
     <width>301</width>
+    <wuid>-74eb494d:1690fb1bda3:-7f55</wuid>
+    <x>132</x>
+    <y>128</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <arrow_length>30</arrow_length>
+    <arrows>0</arrows>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="0" green="114" blue="160" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="85" green="87" blue="83" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill_arrow>true</fill_arrow>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <height>1</height>
+    <horizontal_fill>false</horizontal_fill>
+    <line_style>0</line_style>
+    <line_width>10</line_width>
+    <name>Polyline_21</name>
+    <points>
+      <point x="138" y="338" />
+      <point x="438" y="338" />
+      <point x="507" y="338" />
+    </points>
+    <pv_name>$(P).BF</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Polyline</widget_type>
+    <width>370</width>
     <wuid>47c33f22:1582a648833:-7c54</wuid>
     <x>138</x>
-    <y>172</y>
+    <y>338</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -113,7 +226,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -169,7 +282,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -225,7 +338,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -281,7 +394,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -337,7 +450,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -356,9 +469,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -369,7 +488,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw4
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -400,7 +520,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -419,9 +539,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -432,7 +558,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw7
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -463,7 +590,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -482,9 +609,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -495,7 +628,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw13
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -526,7 +660,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -545,9 +679,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -558,7 +698,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw16
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -589,7 +730,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -608,9 +749,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -621,7 +768,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw10
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -652,7 +800,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -671,9 +819,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -684,7 +838,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw5
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -715,7 +870,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -734,9 +889,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -747,7 +908,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw12
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -778,7 +940,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -797,9 +959,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -810,7 +978,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw8
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -841,7 +1010,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -860,9 +1029,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -873,7 +1048,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw11
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -904,7 +1080,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -923,9 +1099,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -936,7 +1118,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw6
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -967,7 +1150,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -986,9 +1169,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -999,7 +1188,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw9
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -1030,7 +1220,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1049,9 +1239,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -1062,7 +1258,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw14
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -1093,7 +1290,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1112,9 +1309,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -1125,7 +1328,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw15
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -1156,7 +1360,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1175,9 +1379,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -1188,7 +1398,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw2
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -1219,7 +1430,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1238,9 +1449,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -1251,7 +1468,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw3
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -1285,7 +1503,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1343,7 +1561,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1401,7 +1619,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1459,7 +1677,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1517,7 +1735,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1575,7 +1793,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1633,7 +1851,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1688,7 +1906,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1707,9 +1925,15 @@ $(pv_value)</tooltip>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -1720,7 +1944,8 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw1
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
@@ -1754,7 +1979,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1812,7 +2037,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1870,7 +2095,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1928,7 +2153,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -1986,7 +2211,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -2044,7 +2269,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -2102,7 +2327,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -2160,7 +2385,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -2207,7 +2432,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2247,7 +2472,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2287,7 +2512,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2327,7 +2552,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2367,7 +2592,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2407,7 +2632,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2447,7 +2672,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -2487,12 +2712,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>180</height>
+    <height>89</height>
     <horizontal_alignment>0</horizontal_alignment>
     <name>Label</name>
     <rules />
@@ -2505,25 +2730,18 @@ $(pv_value)</tooltip>
     <text>Inputs
 ---------
 I1	- Electrosys
-I2	- Siemens
-I3	- DBE
-
-Outputs
------------
-L1	- Load
-L2	- Load with variable short
-O1	- Line 1 (waveguide)
-O2	- Line 2 </text>
+I2	- Not Used
+I3	- DBE</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>163</width>
+    <width>108</width>
     <wrap_words>false</wrap_words>
     <wuid>-43167f84:152368596cb:-6542</wuid>
-    <x>204</x>
-    <y>16</y>
+    <x>195</x>
+    <y>4</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -2546,7 +2764,7 @@ O2	- Line 2 </text>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -2558,8 +2776,8 @@ O2	- Line 2 </text>
     <line_width>10</line_width>
     <name>Polyline_21</name>
     <points>
-      <point x="507" y="114" />
-      <point x="579" y="114" />
+      <point x="502" y="338" />
+      <point x="574" y="338" />
     </points>
     <pv_name>$(P).BF</pv_name>
     <pv_value />
@@ -2578,8 +2796,8 @@ $(pv_value)</tooltip>
     <widget_type>Polyline</widget_type>
     <width>73</width>
     <wuid>47c33f22:1582a648833:-7c7e</wuid>
-    <x>507</x>
-    <y>114</y>
+    <x>502</x>
+    <y>338</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -2602,427 +2820,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <height>55</height>
-    <horizontal_fill>false</horizontal_fill>
-    <line_style>0</line_style>
-    <line_width>10</line_width>
-    <name>Polyline_6</name>
-    <points>
-      <point x="434" y="173" />
-      <point x="481" y="119" />
-    </points>
-    <pv_name>$(B2).B1</pv_name>
-    <pv_value />
-    <rotation_angle>0.0</rotation_angle>
-    <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>false</value>
-        </exp>
-        <pv trig="true">$(pv_name)</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Polyline</widget_type>
-    <width>48</width>
-    <wuid>47c33f22:1582a648833:-7d36</wuid>
-    <x>434</x>
-    <y>119</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <arrow_length>30</arrow_length>
-    <arrows>0</arrows>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="85" green="87" blue="83" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="85" green="87" blue="83" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fill_arrow>true</fill_arrow>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <height>39</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_style>0</line_style>
-    <line_width>10</line_width>
-    <name>Polyline_12</name>
-    <points>
-      <point x="397" y="121" />
-      <point x="433" y="159" />
-    </points>
-    <pv_name>$(B2).B0</pv_name>
-    <pv_value />
-    <rotation_angle>90.0</rotation_angle>
-    <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0==0">
-          <value>false</value>
-        </exp>
-        <pv trig="true">$(pv_name)</pv>
-      </rule>
-    </rules>
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Polyline</widget_type>
-    <width>37</width>
-    <wuid>47c33f22:1582a648833:-7d35</wuid>
-    <x>397</x>
-    <y>121</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="78" green="154" blue="6" />
-    </background_color>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <gradient>false</gradient>
-    <height>40</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <line_style>0</line_style>
-    <line_width>0</line_width>
-    <name>I1</name>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Ellipse</widget_type>
-    <width>39</width>
-    <wuid>47c33f22:1582a648833:-7d34</wuid>
-    <x>372</x>
-    <y>96</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="78" green="154" blue="6" />
-    </background_color>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <gradient>false</gradient>
-    <height>40</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <line_style>0</line_style>
-    <line_width>0</line_width>
-    <name>I2</name>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Ellipse</widget_type>
-    <width>39</width>
-    <wuid>47c33f22:1582a648833:-7d33</wuid>
-    <x>469</x>
-    <y>96</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>20</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <text>O1</text>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>36</width>
-    <wrap_words>false</wrap_words>
-    <wuid>47c33f22:1582a648833:-7d31</wuid>
-    <x>372</x>
-    <y>106</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>20</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_1</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <text>O2</text>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>36</width>
-    <wrap_words>false</wrap_words>
-    <wuid>47c33f22:1582a648833:-7d30</wuid>
-    <x>472</x>
-    <y>106</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="138" green="226" blue="52" />
-    </background_color>
-    <bg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </bg_gradient_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fg_gradient_color>
-      <color red="255" green="255" blue="255" />
-    </fg_gradient_color>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
-    </font>
-    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
-    <foreground_color>
-      <color red="255" green="0" blue="0" />
-    </foreground_color>
-    <gradient>false</gradient>
-    <height>40</height>
-    <horizontal_fill>true</horizontal_fill>
-    <line_color>
-      <color red="128" green="0" blue="255" />
-    </line_color>
-    <line_style>0</line_style>
-    <line_width>0</line_width>
-    <name>O1</name>
-    <pv_name></pv_name>
-    <pv_value />
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>true</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <tooltip>$(pv_name)
-$(pv_value)</tooltip>
-    <transparent>false</transparent>
-    <visible>true</visible>
-    <widget_type>Ellipse</widget_type>
-    <width>39</width>
-    <wuid>47c33f22:1582a648833:-7d05</wuid>
-    <x>420</x>
-    <y>142</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <auto_size>false</auto_size>
-    <background_color>
-      <color red="255" green="255" blue="255" />
-    </background_color>
-    <border_color>
-      <color red="0" green="128" blue="255" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
-    </font>
-    <foreground_color>
-      <color red="0" green="0" blue="0" />
-    </foreground_color>
-    <height>20</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <name>Label_5</name>
-    <rules />
-    <scale_options>
-      <width_scalable>true</width_scalable>
-      <height_scalable>true</height_scalable>
-      <keep_wh_ratio>false</keep_wh_ratio>
-    </scale_options>
-    <scripts />
-    <text>I</text>
-    <tooltip></tooltip>
-    <transparent>true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <visible>true</visible>
-    <widget_type>Label</widget_type>
-    <width>36</width>
-    <wrap_words>false</wrap_words>
-    <wuid>47c33f22:1582a648833:-7d04</wuid>
-    <x>421</x>
-    <y>152</y>
-  </widget>
-  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
-    <actions hook="false" hook_all="false" />
-    <alarm_pulsing>false</alarm_pulsing>
-    <alpha>255</alpha>
-    <anti_alias>true</anti_alias>
-    <arrow_length>30</arrow_length>
-    <arrows>0</arrows>
-    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
-    <background_color>
-      <color red="85" green="87" blue="83" />
-    </background_color>
-    <border_alarm_sensitive>false</border_alarm_sensitive>
-    <border_color>
-      <color red="85" green="87" blue="83" />
-    </border_color>
-    <border_style>0</border_style>
-    <border_width>1</border_width>
-    <enabled>true</enabled>
-    <fill_arrow>true</fill_arrow>
-    <fill_level>0.0</fill_level>
-    <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -3034,16 +2832,22 @@ $(pv_value)</tooltip>
     <line_width>10</line_width>
     <name>Polyline_6</name>
     <points>
-      <point x="608" y="117" />
-      <point x="679" y="117" />
+      <point x="603" y="341" />
+      <point x="674" y="341" />
     </points>
     <pv_name>$(B3).B1</pv_name>
     <pv_value />
     <rotation_angle>0.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -3054,15 +2858,16 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw2
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
     <width>72</width>
     <wuid>47c33f22:1582a648833:-7c8d</wuid>
-    <x>608</x>
-    <y>117</y>
+    <x>603</x>
+    <y>341</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3085,7 +2890,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -3097,16 +2902,22 @@ $(pv_value)</tooltip>
     <line_width>10</line_width>
     <name>Polyline_12</name>
     <points>
-      <point x="595" y="121" />
-      <point x="631" y="159" />
+      <point x="590" y="345" />
+      <point x="626" y="383" />
     </points>
     <pv_name>$(B3).B0</pv_name>
     <pv_value />
     <rotation_angle>90.0</rotation_angle>
     <rules>
-      <rule name="Visibility" prop_id="visible" out_exp="false">
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
         <exp bool_exp="pv0==0">
-          <value>false</value>
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
         </exp>
         <pv trig="true">$(pv_name)</pv>
       </rule>
@@ -3117,15 +2928,16 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>true</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <tooltip>$(pv_name)
+    <tooltip>Sw1
+$(pv_name)
 $(pv_value)</tooltip>
     <transparent>false</transparent>
     <visible>true</visible>
     <widget_type>Polyline</widget_type>
     <width>37</width>
     <wuid>47c33f22:1582a648833:-7c8c</wuid>
-    <x>595</x>
-    <y>121</y>
+    <x>590</x>
+    <y>345</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3151,7 +2963,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -3182,8 +2994,8 @@ $(pv_value)</tooltip>
     <widget_type>Ellipse</widget_type>
     <width>39</width>
     <wuid>47c33f22:1582a648833:-7c8b</wuid>
-    <x>570</x>
-    <y>96</y>
+    <x>565</x>
+    <y>320</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3209,7 +3021,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -3240,8 +3052,8 @@ $(pv_value)</tooltip>
     <widget_type>Ellipse</widget_type>
     <width>39</width>
     <wuid>47c33f22:1582a648833:-7c8a</wuid>
-    <x>667</x>
-    <y>96</y>
+    <x>662</x>
+    <y>320</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3256,7 +3068,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -3280,8 +3092,8 @@ $(pv_value)</tooltip>
     <width>36</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7c89</wuid>
-    <x>570</x>
-    <y>106</y>
+    <x>565</x>
+    <y>330</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3296,7 +3108,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -3320,8 +3132,8 @@ $(pv_value)</tooltip>
     <width>36</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7c88</wuid>
-    <x>670</x>
-    <y>106</y>
+    <x>665</x>
+    <y>330</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3347,7 +3159,7 @@ $(pv_value)</tooltip>
     </fg_gradient_color>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -3378,8 +3190,8 @@ $(pv_value)</tooltip>
     <widget_type>Ellipse</widget_type>
     <width>39</width>
     <wuid>47c33f22:1582a648833:-7c87</wuid>
-    <x>617</x>
-    <y>149</y>
+    <x>612</x>
+    <y>373</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3394,7 +3206,7 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="19" style="1">Header 1</opifont.name>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
@@ -3418,8 +3230,8 @@ $(pv_value)</tooltip>
     <width>36</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7c86</wuid>
-    <x>618</x>
-    <y>159</y>
+    <x>613</x>
+    <y>383</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3434,12 +3246,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="9" style="0">Fine Print</opifont.name>
+      <opifont.name fontName="Cantarell" height="9" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>21</height>
+    <height>16</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_14</name>
     <rules />
@@ -3455,11 +3267,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>42</width>
+    <width>34</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7b60</wuid>
-    <x>615</x>
-    <y>189</y>
+    <x>614</x>
+    <y>412</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3474,12 +3286,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="9" style="0">Fine Print</opifont.name>
+      <opifont.name fontName="Cantarell" height="9" style="0" pixels="false">Fine Print</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>21</height>
+    <height>32</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_15</name>
     <rules />
@@ -3489,17 +3301,18 @@ $(pv_value)</tooltip>
       <keep_wh_ratio>false</keep_wh_ratio>
     </scale_options>
     <scripts />
-    <text>Cryomodule</text>
+    <text>Cryomodule
+Cavity #2</text>
     <tooltip></tooltip>
     <transparent>true</transparent>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>84</width>
+    <width>64</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7b0c</wuid>
-    <x>646</x>
-    <y>136</y>
+    <x>662</x>
+    <y>359</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3514,12 +3327,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_16</name>
     <rules />
@@ -3535,11 +3348,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>146</width>
+    <width>112</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7a21</wuid>
-    <x>366</x>
-    <y>55</y>
+    <x>376</x>
+    <y>247</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3554,12 +3367,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_17</name>
     <rules />
@@ -3575,11 +3388,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>146</width>
+    <width>112</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-7a11</wuid>
-    <x>563</x>
-    <y>54</y>
+    <x>571</x>
+    <y>293</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3594,7 +3407,7 @@ $(pv_value)</tooltip>
     </background_color>
     <border_alarm_sensitive>false</border_alarm_sensitive>
     <border_color>
-      <color name="Minor" red="255" green="128" blue="0" />
+      <color name="Minor" red="255" green="255" blue="0" />
     </border_color>
     <border_style>0</border_style>
     <border_width>1</border_width>
@@ -3602,20 +3415,20 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="255" green="0" blue="0" />
     </foreground_color>
-    <height>437</height>
+    <height>501</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>1</line_style>
     <line_width>5</line_width>
     <name>Polyline_43</name>
     <points>
-      <point x="534" y="16" />
-      <point x="534" y="452" />
+      <point x="538" y="16" />
+      <point x="538" y="516" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -3634,7 +3447,7 @@ $(pv_value)</tooltip>
     <widget_type>Polyline</widget_type>
     <width>1</width>
     <wuid>47c33f22:1582a648833:-7429</wuid>
-    <x>534</x>
+    <x>538</x>
     <y>16</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
@@ -3658,7 +3471,7 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
@@ -3711,20 +3524,20 @@ $(pv_value)</tooltip>
     <fill_arrow>true</fill_arrow>
     <fill_level>0.0</fill_level>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <foreground_color>
       <color red="255" green="0" blue="0" />
     </foreground_color>
-    <height>13</height>
+    <height>1</height>
     <horizontal_fill>true</horizontal_fill>
     <line_style>0</line_style>
     <line_width>2</line_width>
     <name>Polyline_45</name>
     <points>
-      <point x="421" y="391" />
-      <point x="646" y="391" />
+      <point x="426" y="486" />
+      <point x="651" y="486" />
     </points>
     <pv_name></pv_name>
     <pv_value />
@@ -3743,8 +3556,8 @@ $(pv_value)</tooltip>
     <widget_type>Polyline</widget_type>
     <width>226</width>
     <wuid>47c33f22:1582a648833:-6e21</wuid>
-    <x>420</x>
-    <y>384</y>
+    <x>426</x>
+    <y>486</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3759,12 +3572,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_18</name>
     <rules />
@@ -3780,11 +3593,11 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>109</width>
+    <width>87</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-6d8d</wuid>
-    <x>559</x>
-    <y>354</y>
+    <x>565</x>
+    <y>456</y>
   </widget>
   <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
     <actions hook="false" hook_all="false" />
@@ -3799,12 +3612,12 @@ $(pv_value)</tooltip>
     <border_width>1</border_width>
     <enabled>true</enabled>
     <font>
-      <opifont.name fontName="Cantarell" height="11" style="0">Default</opifont.name>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
     </font>
     <foreground_color>
       <color red="0" green="0" blue="0" />
     </foreground_color>
-    <height>26</height>
+    <height>20</height>
     <horizontal_alignment>1</horizontal_alignment>
     <name>Label_19</name>
     <rules />
@@ -3820,10 +3633,530 @@ $(pv_value)</tooltip>
     <vertical_alignment>1</vertical_alignment>
     <visible>true</visible>
     <widget_type>Label</widget_type>
-    <width>64</width>
+    <width>50</width>
     <wrap_words>false</wrap_words>
     <wuid>47c33f22:1582a648833:-6d7b</wuid>
-    <x>444</x>
-    <y>354</y>
+    <x>450</x>
+    <y>456</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>115</height>
+    <horizontal_alignment>0</horizontal_alignment>
+    <name>Label_20</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Outputs
+-----------
+L1	- Load
+L2	- Load with variable short
+O1	- Line 1: CM Cav #1 (waveguide)
+O2	- Line 2: CM Cav #2 (coax)</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>221</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-74eb494d:1690fb1bda3:-7f69</wuid>
+    <x>314</x>
+    <y>0</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>true</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="9" style="0" pixels="false">Fine Print</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>32</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_21</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>Cryomodule
+Cavity #1</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>64</width>
+    <wrap_words>false</wrap_words>
+    <wuid>-74eb494d:1690fb1bda3:-7f47</wuid>
+    <x>650</x>
+    <y>183</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <arrow_length>30</arrow_length>
+    <arrows>0</arrows>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="85" green="87" blue="83" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="85" green="87" blue="83" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill_arrow>true</fill_arrow>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <height>55</height>
+    <horizontal_fill>false</horizontal_fill>
+    <line_style>0</line_style>
+    <line_width>10</line_width>
+    <name>Polyline_6</name>
+    <points>
+      <point x="426" y="165" />
+      <point x="473" y="219" />
+    </points>
+    <pv_name>$(B2).B1</pv_name>
+    <pv_value />
+    <rotation_angle>0.0</rotation_angle>
+    <rules>
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>Sw2
+$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Polyline</widget_type>
+    <width>48</width>
+    <wuid>47c33f22:1582a648833:-7d36</wuid>
+    <x>426</x>
+    <y>165</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.polyline" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <arrow_length>30</arrow_length>
+    <arrows>0</arrows>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="85" green="87" blue="83" />
+    </background_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="85" green="87" blue="83" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fill_arrow>true</fill_arrow>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <height>39</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_style>0</line_style>
+    <line_width>10</line_width>
+    <name>Polyline_12</name>
+    <points>
+      <point x="389" y="217" />
+      <point x="425" y="179" />
+    </points>
+    <pv_name>$(B2).B0</pv_name>
+    <pv_value />
+    <rotation_angle>90.0</rotation_angle>
+    <rules>
+      <rule name="Visibility" prop_id="line_width" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+      <rule name="Visibility" prop_id="line_style" out_exp="false">
+        <exp bool_exp="pv0==0">
+          <value>1</value>
+        </exp>
+        <pv trig="true">$(pv_name)</pv>
+      </rule>
+    </rules>
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>Sw1
+$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Polyline</widget_type>
+    <width>37</width>
+    <wuid>47c33f22:1582a648833:-7d35</wuid>
+    <x>389</x>
+    <y>179</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="78" green="154" blue="6" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>40</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>I1</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Ellipse</widget_type>
+    <width>39</width>
+    <wuid>47c33f22:1582a648833:-7d34</wuid>
+    <x>364</x>
+    <y>202</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="78" green="154" blue="6" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>40</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>I2</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Ellipse</widget_type>
+    <width>39</width>
+    <wuid>47c33f22:1582a648833:-7d33</wuid>
+    <x>461</x>
+    <y>202</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>O1</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>36</width>
+    <wrap_words>false</wrap_words>
+    <wuid>47c33f22:1582a648833:-7d31</wuid>
+    <x>364</x>
+    <y>212</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_1</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>O2</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>36</width>
+    <wrap_words>false</wrap_words>
+    <wuid>47c33f22:1582a648833:-7d30</wuid>
+    <x>464</x>
+    <y>212</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Ellipse" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <alarm_pulsing>false</alarm_pulsing>
+    <alpha>255</alpha>
+    <anti_alias>true</anti_alias>
+    <backcolor_alarm_sensitive>false</backcolor_alarm_sensitive>
+    <background_color>
+      <color red="138" green="226" blue="52" />
+    </background_color>
+    <bg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </bg_gradient_color>
+    <border_alarm_sensitive>false</border_alarm_sensitive>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <fg_gradient_color>
+      <color red="255" green="255" blue="255" />
+    </fg_gradient_color>
+    <fill_level>0.0</fill_level>
+    <font>
+      <opifont.name fontName="Cantarell" height="11" style="0" pixels="false">Default</opifont.name>
+    </font>
+    <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
+    <foreground_color>
+      <color red="255" green="0" blue="0" />
+    </foreground_color>
+    <gradient>false</gradient>
+    <height>40</height>
+    <horizontal_fill>true</horizontal_fill>
+    <line_color>
+      <color red="128" green="0" blue="255" />
+    </line_color>
+    <line_style>0</line_style>
+    <line_width>0</line_width>
+    <name>O1</name>
+    <pv_name></pv_name>
+    <pv_value />
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>true</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <widget_type>Ellipse</widget_type>
+    <width>39</width>
+    <wuid>47c33f22:1582a648833:-7d05</wuid>
+    <x>412</x>
+    <y>156</y>
+  </widget>
+  <widget typeId="org.csstudio.opibuilder.widgets.Label" version="1.0.0">
+    <actions hook="false" hook_all="false" />
+    <auto_size>false</auto_size>
+    <background_color>
+      <color red="255" green="255" blue="255" />
+    </background_color>
+    <border_color>
+      <color red="0" green="128" blue="255" />
+    </border_color>
+    <border_style>0</border_style>
+    <border_width>1</border_width>
+    <enabled>true</enabled>
+    <font>
+      <opifont.name fontName="Cantarell" height="19" style="1" pixels="false">Header 1</opifont.name>
+    </font>
+    <foreground_color>
+      <color red="0" green="0" blue="0" />
+    </foreground_color>
+    <height>20</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <name>Label_5</name>
+    <rules />
+    <scale_options>
+      <width_scalable>true</width_scalable>
+      <height_scalable>true</height_scalable>
+      <keep_wh_ratio>false</keep_wh_ratio>
+    </scale_options>
+    <scripts />
+    <text>I</text>
+    <tooltip></tooltip>
+    <transparent>true</transparent>
+    <vertical_alignment>1</vertical_alignment>
+    <visible>true</visible>
+    <widget_type>Label</widget_type>
+    <width>36</width>
+    <wrap_words>false</wrap_words>
+    <wuid>47c33f22:1582a648833:-7d04</wuid>
+    <x>413</x>
+    <y>166</y>
   </widget>
 </display>
