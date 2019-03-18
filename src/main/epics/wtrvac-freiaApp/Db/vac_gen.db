@@ -312,6 +312,17 @@ record(bo, "CstatH-RHtr:FV563:cOn-proc") {
   field(FLNK, "CstatH-RHtr:FV563:cOn")
 }
 
+# Watchdog_1 for the HPRF stations
+
+record(bo, "HPRF-Ctlr:Watchdog-1:cmdAlive") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/135 T=BYTE B=0")
+  field(HIGH, "0.5")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Alive")
+  field(PINI, "NO")
+}
+
 # FREIA bunker clearing state
 
 record (mbbi, "RadProt-Bunker1:Clearing:sState") {
