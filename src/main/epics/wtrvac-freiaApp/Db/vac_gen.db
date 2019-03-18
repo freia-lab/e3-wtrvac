@@ -314,7 +314,7 @@ record(bo, "CstatH-RHtr:FV563:cOn-proc") {
 
 # Watchdog_1 for the HPRF stations
 
-record(bo, "HPRF-Ctlr:Watchdog-1:cmdAlive") {
+record(bo, "HPRF-Ctrl:Watchdog-1:cmdAlive") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:WTRVAC/135 T=BYTE B=0")
   field(HIGH, "0.5")
