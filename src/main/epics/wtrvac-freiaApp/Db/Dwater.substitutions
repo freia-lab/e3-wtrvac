@@ -1,41 +1,41 @@
 # Deionized water
 
 file "Dwtr_AI.template" { pattern
-{P,  	 	    SIG,	OFFS,  LOPR,  HOPR, EGU,  PREC}
-{"WtrC-Dwtr:P1",    ProcessFB,	152,   0,     100,  "%",  1}
-{"WtrC-Dwtr:P1",    RelPerf,	160,   0,     100,  "%",  1}
-{"WtrC-Dwtr:P1",    MotI,	164,   0,     10,   "A",  1}
-{"WtrC-Dwtr:P1",    MotU,	168,   0,     230,  "V",  1}
-{"WtrC-Dwtr:P1",    MotP,	172,   0,     1220, "W",  1}
-{"WtrC-Dwtr:P1",    Energy,	176,   0,     1e5,  "Wh", 1}
-{"WtrC-Dwtr:P1",    ElectrTmp,	180,   0,     1220, "ᵒC", 1}
-{"WtrC-Dwtr:P1",    OpTime,	184,   0,     1e5,  "h",  1}
-{"WtrC-Dwtr:P1",    TotPwrdTime,188,   0,     1e5,  "h",  1}
-{"WtrC-Dwtr:P1",    ActSP,	192,   0,     100,  "%",  1}
-{"WtrC-Dwtr:P1",    Freq,	196,   0,     100,  "Hz", 1}
-{"WtrC-Dwtr:P1",    Torque,	200,   0,     500,  "Nm", 1}
-{"WtrC-Dwtr:P1",    Speed,	204,   0,     3000, "rpm",0}
-{"WtrC-Dwtr:P1",    NoOfStarts,	208,   0,     1000, "",   1}
-{"WtrC-Dwtr:P2",    ProcessFB,	662,   0,     100,  "%",  1}
-{"WtrC-Dwtr:P2",    RelPerf,	670,   0,     100,  "%",  1}
-{"WtrC-Dwtr:P2",    MotI,	674,   0,     10,   "A",  1}
-{"WtrC-Dwtr:P2",    MotU,	678,   0,     230,  "V",  1}
-{"WtrC-Dwtr:P2",    MotP,	682,   0,     1220, "W",  1}
-{"WtrC-Dwtr:P2",    Energy,	686,   0,     1e5,  "Wh", 1}
-{"WtrC-Dwtr:P2",    ElectrTmp,	690,   0,     1220, "ᵒC", 1}
-{"WtrC-Dwtr:P2",    OpTime,	694,   0,     1e5,  "h",  1}
-{"WtrC-Dwtr:P2",    TotPwrdTime,698,   0,     1e5,  "h",  1}
-{"WtrC-Dwtr:P2",    ActSP,	702,   0,     100,  "%",  1}
-{"WtrC-Dwtr:P2",    Freq,	706,   0,     100,  "Hz", 1}
-{"WtrC-Dwtr:P2",    Torque,	710,   0,     500,  "Nm", 1}
-{"WtrC-Dwtr:P2",    Speed,	714,   0,     3000, "rpm",0}
-{"WtrC-Dwtr:P2",    NoOfStarts,	718,   0,     1000, "",   1}
+{P,  	 	    SIG,	OFFS,  LOPR,  HOPR, EGU,  PREC, PB_ADDR}
+{"WtrC-Dwtr:P1",    ProcessFB,	152,   0,     100,  "%",  1,	4}
+{"WtrC-Dwtr:P1",    RelPerf,	160,   0,     100,  "%",  1,	4}
+{"WtrC-Dwtr:P1",    MotI,	164,   0,     10,   "A",  1,	4}
+{"WtrC-Dwtr:P1",    MotU,	168,   0,     230,  "V",  1,	4}
+{"WtrC-Dwtr:P1",    MotP,	172,   0,     1220, "W",  1,	4}
+{"WtrC-Dwtr:P1",    Energy,	176,   0,     1e5,  "Wh", 1,	4}
+{"WtrC-Dwtr:P1",    ElectrTmp,	180,   0,     1220, "ᵒC", 1,	4}
+{"WtrC-Dwtr:P1",    OpTime,	184,   0,     1e5,  "h",  1,	4}
+{"WtrC-Dwtr:P1",    TotPwrdTime,188,   0,     1e5,  "h",  1,	4}
+{"WtrC-Dwtr:P1",    ActSP,	192,   0,     100,  "%",  1,	4}
+{"WtrC-Dwtr:P1",    Freq,	196,   0,     100,  "Hz", 1,	4}
+{"WtrC-Dwtr:P1",    Torque,	200,   0,     500,  "Nm", 1,	4}
+{"WtrC-Dwtr:P1",    Speed,	204,   0,     3000, "rpm",0,	4}
+{"WtrC-Dwtr:P1",    NoOfStarts,	208,   0,     1000, "",   1,	4}
+{"WtrC-Dwtr:P2",    ProcessFB,	662,   0,     100,  "%",  1,	7}
+{"WtrC-Dwtr:P2",    RelPerf,	670,   0,     100,  "%",  1,	7}
+{"WtrC-Dwtr:P2",    MotI,	674,   0,     10,   "A",  1,	7}
+{"WtrC-Dwtr:P2",    MotU,	678,   0,     230,  "V",  1,	7}
+{"WtrC-Dwtr:P2",    MotP,	682,   0,     1220, "W",  1,	7}
+{"WtrC-Dwtr:P2",    Energy,	686,   0,     1e5,  "Wh", 1,	7}
+{"WtrC-Dwtr:P2",    ElectrTmp,	690,   0,     1220, "ᵒC", 1,	7}
+{"WtrC-Dwtr:P2",    OpTime,	694,   0,     1e5,  "h",  1,	7}
+{"WtrC-Dwtr:P2",    TotPwrdTime,698,   0,     1e5,  "h",  1,	7}
+{"WtrC-Dwtr:P2",    ActSP,	702,   0,     100,  "%",  1,	7}
+{"WtrC-Dwtr:P2",    Freq,	706,   0,     100,  "Hz", 1,	7}
+{"WtrC-Dwtr:P2",    Torque,	710,   0,     500,  "Nm", 1,	7}
+{"WtrC-Dwtr:P2",    Speed,	714,   0,     3000, "rpm",0,	7}
+{"WtrC-Dwtr:P2",    NoOfStarts,	718,   0,     1000, "",   1,	7}
 }
 
 file "Dwtr_pump.template" { pattern
-{P,  	 	    sOFFS1, sOFFS2, sOFFS3, sOFFS4, sOFFS5, sOFFS6, cOFFS1, cOFFS3, cOFFS6, INIT_EVNT }
-{"WtrC-Dwtr:P1",    150,    151,    157,    158,    159,    214,    32,	    34,	    36,	    7}
-{"WtrC-Dwtr:P2",    660,    661,    667,    668,    669,    724,    136,    138,    140,    7}
+{P,  	 	    sOFFS1, sOFFS2, sOFFS3, sOFFS4, sOFFS5, sOFFS6, cOFFS1, cOFFS3, cOFFS6, INIT_EVNT, PB_ADDR}
+{"WtrC-Dwtr:P1",    150,    151,    157,    158,    159,    214,    32,	    34,	    36,	    7,	       4}
+{"WtrC-Dwtr:P2",    660,    661,    667,    668,    669,    724,    136,    138,    140,    7,	       7}
 }
 
 file "Dwtr_AIx4.template" { pattern

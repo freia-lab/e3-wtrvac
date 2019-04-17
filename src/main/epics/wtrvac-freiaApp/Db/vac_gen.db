@@ -50,6 +50,8 @@ record(mbbi, "CstatH-Vac:TP001:sStatus") {
   field(PINI, "YES")
   field(FLNK, "CstatH-Vac:TP001:cOn-rbk")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-5.VAL NPP MS")
 }
 
 record(longin, "CstatH-Vac:TP002:sStatus") {
@@ -58,6 +60,28 @@ record(longin, "CstatH-Vac:TP002:sStatus") {
   field(PINI, "YES")
   field(FLNK, "CstatH-Vac:TP002:cOn-rbk")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-6.VAL NPP MS")
+}
+
+record(longin, "CstatV-Vac:TP050:sStatus") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/740 T=WORD")
+  field(PINI, "YES")
+  field(FLNK, "CstatV-Vac:TP050:cOn-rbk")
+  field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-8.VAL NPP MS")
+}
+
+record(longin, "CstatV-Vac:TP060:sStatus") {
+  field(DTYP, "S7plc")
+  field(INP, "@PLC:WTRVAC/904 T=WORD")
+  field(PINI, "YES")
+  field(FLNK, "CstatV-Vac:TP060:cOn-rbk")
+  field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-9.VAL NPP MS")
 }
 
 record(mbbi, "CstatH-Vac:TP001:sFaults") {
@@ -95,7 +119,21 @@ record(mbbi, "CstatH-Vac:TP001:sRelays") {
 }
 
 record(calc, "CstatH-Vac:TP002:sOn") {
-  field(INPA, "CstatH-Vac:TP002:sStatus")
+  field(INPA, "CstatH-Vac:TP002:sStatus MSI")
+  field(CALC, "(A&0x400)||(A&0x10)?1:0")
+  field(EVNT, "$(INIT_EVNT)")
+  field(SCAN, ".5 second")
+}
+
+record(calc, "CstatV-Vac:TP050:sOn") {
+  field(INPA, "CstatV-Vac:TP050:sStatus MSI")
+  field(CALC, "(A&0x400)||(A&0x10)?1:0")
+  field(EVNT, "$(INIT_EVNT)")
+  field(SCAN, ".5 second")
+}
+
+record(calc, "CstatV-Vac:TP060:sOn") {
+  field(INPA, "CstatV-Vac:TP060:sStatus MSI")
   field(CALC, "(A&0x400)||(A&0x10)?1:0")
   field(EVNT, "$(INIT_EVNT)")
   field(SCAN, ".5 second")
@@ -133,6 +171,38 @@ record(calcout, "CstatH-Vac:TP002:cOn-rbk") {
 record(bo, "CstatH-Vac:TP002:cOn") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:WTRVAC/47 T=BYTE B=0")
+  field(ZNAM, "Off")
+  field(ONAM, "On")
+  field(PINI, "NO")
+}
+
+record(calcout, "CstatV-Vac:TP050:cOn-rbk") {
+  field(INPA, "CstatV-Vac:TP050:sStatus")
+  field(CALC, "(A&0x400)||(A&0x10)?1:0")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(OUT, "CstatV-Vac:TP050:cOn PP")
+}
+
+record(bo, "CstatV-Vac:TP050:cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/145 T=BYTE B=0")
+  field(ZNAM, "Off")
+  field(ONAM, "On")
+  field(PINI, "NO")
+}
+
+record(calcout, "CstatV-Vac:TP060:cOn-rbk") {
+  field(INPA, "CstatV-Vac:TP060:sStatus")
+  field(CALC, "(A&0x400)||(A&0x10)?1:0")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(OUT, "CstatV-Vac:TP060:cOn PP")
+}
+
+record(bo, "CstatV-Vac:TP060:cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/195 T=BYTE B=0")
   field(ZNAM, "Off")
   field(ONAM, "On")
   field(PINI, "NO")
@@ -233,6 +303,24 @@ record(bo, "CstatH-Vac:TP002:cmdReset") {
   field(HIGH, "0.5")
 }
 
+record(bo, "CstatV-Vac:TP050:cmdReset") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/145 T=BYTE B=7")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Reset")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+}
+
+record(bo, "CstatV-Vac:TP060:cmdReset") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/195 T=BYTE B=7")
+  field(ZNAM, "Iddle")
+  field(ONAM, "Reset")
+  field(PINI, "NO")
+  field(HIGH, "0.5")
+}
+
 # Super critical Helium valve
 
 record(bo, "CstatH-SHe:FV309:cOn") {
@@ -322,6 +410,100 @@ record(bo, "HPRF-Ctrl:Watchdog-1:cmdAlive") {
   field(ONAM, "Alive")
   field(PINI, "NO")
 }
+
+# Profibus DP slave status
+
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-1") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 1")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=1")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-2") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 2")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=2")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-3") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 3")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=3")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-4") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 4")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=4")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-5") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 5")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=5")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-6") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 6")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=6")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-7") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 7")
+  field (INP,  "@PLC:WTRVAC/1068 T=BYTE B=7")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-8") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 8")
+  field (INP,  "@PLC:WTRVAC/1069 T=BYTE B=0")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-9") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 9")
+  field (INP,  "@PLC:WTRVAC/1069 T=BYTE B=1")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "INVALID")
+}
+record (bi, "PLC-WTRVAC:Ctrl-PB:sErr-10") {
+  field (DTYP, "S7plc")
+  field (DESC, "Error Slave staion 10")
+  field (INP,  "@PLC:WTRVAC/1069 T=BYTE B=2")
+  field (SCAN, "I/O Intr")
+  field (ZNAM, "OK")
+  field (ONAM, "Error")
+  field (OSV,  "MAJOR")
+}
+
 
 # FREIA bunker clearing state
 

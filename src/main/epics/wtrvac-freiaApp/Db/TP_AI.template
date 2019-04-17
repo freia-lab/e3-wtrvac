@@ -10,4 +10,6 @@ record(ai, "$(P):s$(SIG)") {
   field(EGU, "$(EGU)")
   field(LOPR, "$(LOPR)")
   field(HOPR, "$(HOPR)")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }

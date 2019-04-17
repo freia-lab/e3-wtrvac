@@ -8,6 +8,8 @@ record(bi, "$(P):sFault")  {
   field(ZNAM, "NoFault")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 record(bi, "$(P):sWarn")  {
   field(DTYP, "S7plc")
@@ -17,6 +19,8 @@ record(bi, "$(P):sWarn")  {
   field(ZNAM, "NoWarning")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 record(bi, "$(P):sAtMinSpeed")  {
   field(DTYP, "S7plc")
@@ -24,6 +28,8 @@ record(bi, "$(P):sAtMinSpeed")  {
   field(ONAM, "AtMinSpeed")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 record(bi, "$(P):sAtMaxSpeed")  {
   field(DTYP, "S7plc")
@@ -38,6 +44,8 @@ record(bi, "$(P):sSPinfluenced")  {
   field(ONAM, "SP_Influenced")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 record(bi, "$(P):sRotating")  {
   field(DTYP, "S7plc")
@@ -46,6 +54,8 @@ record(bi, "$(P):sRotating")  {
   field(ZNAM, "Not_Rotating")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 
 record(ai, "$(P):sWarnCode")  {
@@ -53,12 +63,16 @@ record(ai, "$(P):sWarnCode")  {
   field(INP, "@PLC:WTRVAC/$(sOFFS4) T=BYTE")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 record(ai, "$(P):sFaultCode")  {
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(sOFFS5) T=BYTE")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 
 # Input/output records
@@ -76,6 +90,8 @@ record(mbbi, "$(P):sOpMode") {
   field(PINI, "YES")
   field(FLNK, "$(P):cOpMode-rbk")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 
 record(calcout, "$(P):cOpMode-rbk") {
@@ -111,6 +127,8 @@ record(ai, "$(P):sSetPoint") {
   field(PINI, "YES")
   field(FLNK, "$(P):cSetPoint-rbk")
   field(SCAN, "I/O Intr")
+  field(DISV, "-1") # Will never disable, but will propagate severity
+  field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 
 record(calcout, "$(P):cSetPoint-rbk") {
