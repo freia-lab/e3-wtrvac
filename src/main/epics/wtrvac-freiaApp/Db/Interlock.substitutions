@@ -1,6 +1,6 @@
 file "Interlock.template" { pattern
 {SYS,	SUBS,	DEV,	       OFFS1,	OFFS2, B0,	B1,	B2,	B3,	B4,	B5,	B6,	B7, INIT_EVNT}
-{LLRF,	Cntrl,	SlowIntlk,     440, 	102, "FREIA bunker door closed", "FREIA bunker cleared", "PwrCoupler Wtr Cooling", "External Interlock", "Klystron Wtr Cooling", "", "","Test", 7}
+{LLRF,	Cntrl,	SlowIntlk,     440, 	102, "FREIA bunker door closed", "FREIA bunker cleared", "PwrCoupler Wtr Cooling", "External Interlock", "Klystron Wtr Cooling", "CM Cryogenics", "","Test", 7}
 {HPRF,	Esys,	ExtIntlkHNOSS, 444, 	104, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw13", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard3 Sw2", "", "Watchdog-1","Test", 7}
 {HPRF,	Esys,	ExtIntlkLoad1, 448, 	106, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw1", "Wtr Flow Guard6", "", "", "", "Watchdog-1","Test", 7}
 {HPRF,	Esys,	ExtIntlkLoad2, 452, 	108, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw15", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
