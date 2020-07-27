@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <macros>
+    <P>WtrC-Dwtr</P>
+  </macros>
+  <width>1350</width>
+  <height>800</height>
+  <background_color>
+    <color name="BACKGROUND" red="220" green="225" blue="221">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <grid_visible>false</grid_visible>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <text>Deionized Water Cooling System</text>
+    <x>285</x>
+    <y>25</y>
+    <width>498</width>
+    <height>46</height>
+    <font>
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <vertical_alignment>1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  P$(PUMP_NR) Pump Control</name>
+    <macros>
+      <PUMP_NR>1</PUMP_NR>
+    </macros>
+    <x>15</x>
+    <y>381</y>
+    <width>426</width>
+    <height>287</height>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template</name>
+      <pv_name>$(P):P$(PUMP_NR):cRemote</pv_name>
+      <x>5</x>
+      <y>7</y>
+      <width>110</width>
+      <height>40</height>
+      <off_label>Local  </off_label>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_label>Remote   </on_label>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template_1</name>
+      <pv_name>$(P):P$(PUMP_NR):cOn</pv_name>
+      <x>118</x>
+      <y>7</y>
+      <width>110</width>
+      <height>40</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <show_confirm_dialog>1</show_confirm_dialog>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Operation Mode</name>
+      <y>55</y>
+      <width>249</width>
+      <height>91</height>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="combo" version="2.0.0">
+        <name>opMode</name>
+        <pv_name>$(P):P$(PUMP_NR):cOpMode</pv_name>
+        <y>7</y>
+        <width>196</width>
+        <height>38</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Automatic Mode Set-point</name>
+      <y>155</y>
+      <width>373</width>
+      <height>79</height>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_5</name>
+        <text>Pressure SP [%]</text>
+        <y>12</y>
+        <width>92</width>
+        <height>19</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input Template</name>
+        <pv_name>$(P):P$(PUMP_NR):cSetPoint</pv_name>
+        <x>122</x>
+        <y>11</y>
+        <width>66</width>
+        <height>21</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template</name>
+        <pv_name>$(P):P$(PUMP_NR):sSetPoint</pv_name>
+        <x>222</x>
+        <y>11</y>
+        <width>96</width>
+        <height>21</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):P$(PUMP_NR):cmdReset</pv_name>
+      <text>Reset</text>
+      <x>240</x>
+      <y>7</y>
+      <width>111</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="15.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions execute_as_one="true">
+        <action type="open_display">
+          <file>helper-opi-files/WtrPumpDetails.bob</file>
+          <target>standalone</target>
+          <description>Show pump's details</description>
+        </action>
+      </actions>
+      <text>Details...</text>
+      <x>245</x>
+      <y>83</y>
+      <width>111</width>
+      <height>40</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2</name>
+    <x>60</x>
+    <y>75</y>
+    <width>561</width>
+    <height>296</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template</name>
+      <x>75</x>
+      <y>117</y>
+      <width>463</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="462.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_1</name>
+      <x>25</x>
+      <y>117</y>
+      <width>96</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="95.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_2</name>
+      <x>75</x>
+      <y>119</y>
+      <width>411</width>
+      <height>139</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="138.0">
+        </point>
+        <point x="410.0" y="138.0">
+        </point>
+        <point x="410.0" y="0.0">
+        </point>
+        <point x="410.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template_1</name>
+      <file>../SymbolLibrary/PNG/Fluid/Filters/FI Filter General.png</file>
+      <x>320</x>
+      <y>222</y>
+      <width>59</width>
+      <height>70</height>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_3</name>
+      <x>187</x>
+      <y>4</y>
+      <width>171</width>
+      <height>101</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="100.0">
+        </point>
+        <point x="170.0" y="100.0">
+        </point>
+        <point x="170.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template</name>
+      <file>../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX Heat Exchanger with tube coil.png</file>
+      <x>215</x>
+      <y>71</y>
+      <width>115</width>
+      <height>93</height>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template_2</name>
+      <file>../freia-symbols/cryogenics/valve_control.svg</file>
+      <x>169</x>
+      <y>31</y>
+      <width>35</width>
+      <height>46</height>
+      <rotation>90.0</rotation>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Boolean Symbol Image Monitor Template</name>
+      <pv_name>$(P):P1:sOn</pv_name>
+      <symbols>
+        <symbol>../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+        <symbol>../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <x>120</x>
+      <y>101</y>
+      <width>30</width>
+      <height>30</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label Template</name>
+      <text>Water conductivity [μS/cm²]</text>
+      <x>268</x>
+      <y>190</y>
+      <width>165</width>
+      <height>19</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <actions>
+      </actions>
+      <border_color>
+        <color name="IO Border" red="215" green="215" blue="215">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_4</name>
+      <x>400</x>
+      <y>255</y>
+      <width>1</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_5</name>
+      <x>390</x>
+      <y>257</y>
+      <width>95</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="94.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:P1:sSpeed</pv_name>
+      <x>102</x>
+      <y>136</y>
+      <width>91</width>
+      <height>18</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:CT002:sRdV</pv_name>
+      <x>239</x>
+      <y>217</y>
+      <width>80</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:CT002:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:PT001:sRdV</pv_name>
+      <x>402</x>
+      <y>53</y>
+      <width>81</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:PT001:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:TT001:sRdV</pv_name>
+      <x>402</x>
+      <y>82</y>
+      <width>81</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:TT001:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>P1</text>
+      <x>112</x>
+      <y>77</y>
+      <width>48</width>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>The main 
+circuit</text>
+      <x>215</x>
+      <y>11</y>
+      <width>88</width>
+      <height>54</height>
+      <font>
+        <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template_1</name>
+      <pv_name>WtrC-Dwtr:CT001:sRdV</pv_name>
+      <x>391</x>
+      <y>217</y>
+      <width>67</width>
+      <height>21</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:CT001:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="databrowser" version="2.0.0">
+    <name>Data Browser</name>
+    <file>Wtr_T+C.plt</file>
+    <x>445</x>
+    <y>380</y>
+    <width>400</width>
+    <height>300</height>
+    <actions>
+    </actions>
+  </widget>
+  <widget type="action_button" version="3.0.0">
+    <name>Action Button</name>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>helper-opi-files/PwrCpl-WtrC.bob</file>
+        <target>standalone</target>
+      </action>
+    </actions>
+    <text>Pwr Coupler...</text>
+    <x>30</x>
+    <y>679</y>
+    <width>139</width>
+    <height>40</height>
+    <foreground_color>
+      <color red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <tooltip>$(actions)</tooltip>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2_1</name>
+    <x>610</x>
+    <y>75</y>
+    <width>370</width>
+    <height>220</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template</name>
+      <x>25</x>
+      <y>120</y>
+      <width>316</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="315.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_1</name>
+      <x>10</x>
+      <y>120</y>
+      <width>61</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="60.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_3</name>
+      <x>137</x>
+      <y>6</y>
+      <width>171</width>
+      <height>100</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="99.0">
+        </point>
+        <point x="170.0" y="99.0">
+        </point>
+        <point x="170.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template</name>
+      <file>../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX Heat Exchanger with tube coil.png</file>
+      <x>165</x>
+      <y>74</y>
+      <width>115</width>
+      <height>93</height>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template_2</name>
+      <file>../freia-symbols/cryogenics/valve_control.svg</file>
+      <x>119</x>
+      <y>33</y>
+      <width>35</width>
+      <height>46</height>
+      <rotation>90.0</rotation>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:TT010:sRdV</pv_name>
+      <x>267</x>
+      <y>146</y>
+      <width>81</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:TT010:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>The circulator 
+circuit</text>
+      <x>150</x>
+      <y>10</y>
+      <width>111</width>
+      <height>47</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image</name>
+      <file>../freia-symbols/cryogenics/PV_Vacuum_Pump.svg</file>
+      <x>70</x>
+      <y>101</y>
+      <width>36</width>
+      <height>36</height>
+      <actions>
+      </actions>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Panel 2_2</name>
+    <x>979</x>
+    <y>75</y>
+    <width>370</width>
+    <height>220</height>
+    <style>3</style>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template</name>
+      <x>25</x>
+      <y>120</y>
+      <width>316</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="315.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_1</name>
+      <x>10</x>
+      <y>120</y>
+      <width>61</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="60.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline Template_3</name>
+      <x>137</x>
+      <y>6</y>
+      <width>171</width>
+      <height>100</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="99.0">
+        </point>
+        <point x="170.0" y="99.0">
+        </point>
+        <point x="170.0" y="0.0">
+        </point>
+      </points>
+      <actions>
+      </actions>
+      <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template</name>
+      <file>../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX Heat Exchanger with tube coil.png</file>
+      <x>165</x>
+      <y>74</y>
+      <width>115</width>
+      <height>93</height>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Image Template_2</name>
+      <file>../freia-symbols/cryogenics/valve_control.svg</file>
+      <x>119</x>
+      <y>33</y>
+      <width>35</width>
+      <height>46</height>
+      <rotation>90.0</rotation>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Boolean Symbol Image Monitor Template</name>
+      <pv_name>$(P):P2:sOn</pv_name>
+      <symbols>
+        <symbol>../freia-symbols/cryogenics/PV_Vacuum_Pump_RED.svg</symbol>
+        <symbol>../freia-symbols/cryogenics/PV_Vacuum_Pump_GREEN.svg</symbol>
+      </symbols>
+      <x>70</x>
+      <y>104</y>
+      <width>30</width>
+      <height>30</height>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:P2:sSpeed</pv_name>
+      <x>52</x>
+      <y>140</y>
+      <width>91</width>
+      <height>17</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:PT002:sRdV</pv_name>
+      <x>267</x>
+      <y>147</y>
+      <width>81</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:PT001:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update Template</name>
+      <pv_name>WtrC-Dwtr:TT002:sRdV</pv_name>
+      <x>267</x>
+      <y>175</y>
+      <width>81</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="13.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="WHITE" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <rules>
+        <rule name="BgRule" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0==1 || pv0==4">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0==2 || pv0==3">
+            <value>
+              <color name="YELLOW" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>WtrC-Dwtr:TT001:sRdV-stat</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+      <border_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>P2</text>
+      <x>61</x>
+      <y>80</y>
+      <width>48</width>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>The modulator 
+circuit</text>
+      <x>150</x>
+      <y>10</y>
+      <width>118</width>
+      <height>47</height>
+      <font>
+        <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <auto_size>true</auto_size>
+      <wrap_words>false</wrap_words>
+      <actions>
+      </actions>
+      <border_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </border_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>  P$(PUMP_NR) Pump Control</name>
+    <macros>
+      <PUMP_NR>2</PUMP_NR>
+    </macros>
+    <x>910</x>
+    <y>365</y>
+    <width>426</width>
+    <height>287</height>
+    <foreground_color>
+      <color red="0" green="128" blue="255">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color red="240" green="240" blue="240">
+      </color>
+    </background_color>
+    <transparent>true</transparent>
+    <actions>
+    </actions>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template</name>
+      <pv_name>$(P):P$(PUMP_NR):cRemote</pv_name>
+      <x>4</x>
+      <y>9</y>
+      <width>110</width>
+      <height>40</height>
+      <off_label>Local  </off_label>
+      <off_color>
+        <color name="LED-BLUE-OFF" red="90" green="110" blue="110">
+        </color>
+      </off_color>
+      <on_label>Remote   </on_label>
+      <on_color>
+        <color name="LED-BLUE-ON" red="81" green="232" blue="255">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button Template_1</name>
+      <pv_name>$(P):P$(PUMP_NR):cOn</pv_name>
+      <x>118</x>
+      <y>9</y>
+      <width>110</width>
+      <height>40</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="RED" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <on_color>
+        <color name="LED-GREEN-ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <actions>
+      </actions>
+      <show_confirm_dialog>1</show_confirm_dialog>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Operation Mode</name>
+      <y>55</y>
+      <width>249</width>
+      <height>91</height>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="combo" version="2.0.0">
+        <name>opMode</name>
+        <pv_name>$(P):P$(PUMP_NR):cOpMode</pv_name>
+        <y>10</y>
+        <width>196</width>
+        <height>38</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <actions>
+        </actions>
+      </widget>
+    </widget>
+    <widget type="group" version="2.0.0">
+      <name>Automatic Mode Set-point</name>
+      <y>155</y>
+      <width>373</width>
+      <height>79</height>
+      <foreground_color>
+        <color red="0" green="128" blue="255">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <transparent>true</transparent>
+      <actions>
+      </actions>
+      <widget type="label" version="2.0.0">
+        <name>Label Template_5</name>
+        <text>Pressure SP [%]</text>
+        <y>13</y>
+        <width>92</width>
+        <height>18</height>
+        <font>
+          <font family="Source Sans Pro" style="REGULAR" size="14.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="BACKGROUND" red="220" green="225" blue="221">
+          </color>
+        </background_color>
+        <vertical_alignment>1</vertical_alignment>
+        <actions>
+        </actions>
+        <border_color>
+          <color name="IO Border" red="215" green="215" blue="215">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textentry" version="3.0.0">
+        <name>Text Input Template</name>
+        <pv_name>$(P):P$(PUMP_NR):cSetPoint</pv_name>
+        <x>122</x>
+        <y>13</y>
+        <width>66</width>
+        <height>21</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="GRAY-BORDER" red="121" green="121" blue="121">
+          </color>
+        </background_color>
+        <show_units>false</show_units>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+      <widget type="textupdate" version="2.0.0">
+        <name>Text Update Template</name>
+        <pv_name>$(P):P$(PUMP_NR):sSetPoint</pv_name>
+        <x>222</x>
+        <y>12</y>
+        <width>96</width>
+        <height>21</height>
+        <font>
+          <font family="Source Sans Pro" style="BOLD" size="13.0">
+          </font>
+        </font>
+        <foreground_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </foreground_color>
+        <background_color>
+          <color name="WHITE" red="255" green="255" blue="255">
+          </color>
+        </background_color>
+        <wrap_words>false</wrap_words>
+        <actions>
+        </actions>
+        <border_width>2</border_width>
+        <border_color>
+          <color name="BLACK" red="0" green="0" blue="0">
+          </color>
+        </border_color>
+      </widget>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+        </action>
+      </actions>
+      <pv_name>$(P):P$(PUMP_NR):cmdReset</pv_name>
+      <text>Reset</text>
+      <x>240</x>
+      <y>9</y>
+      <width>111</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="15.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button</name>
+      <actions execute_as_one="true">
+        <action type="open_display">
+          <file>helper-opi-files/WtrPumpDetails.bob</file>
+          <target>standalone</target>
+          <description>Show pump's details</description>
+        </action>
+      </actions>
+      <text>Details...</text>
+      <x>246</x>
+      <y>85</y>
+      <width>111</width>
+      <height>40</height>
+      <foreground_color>
+        <color red="0" green="0" blue="0">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color red="240" green="240" blue="240">
+        </color>
+      </background_color>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>
