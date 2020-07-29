@@ -19,7 +19,7 @@
     <x>110</x>
     <y>35</y>
     <width>499</width>
-    <height>46</height>
+    <height>48</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -331,10 +331,10 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label Template_3</name>
-      <text>Potor Power</text>
+      <text>Motor Power</text>
       <y>142</y>
-      <width>73</width>
-      <height>19</height>
+      <width>76</width>
+      <height>18</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -957,7 +957,7 @@
       <text>Status</text>
       <y>6</y>
       <width>51</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -985,7 +985,7 @@
       <x>89</x>
       <y>6</y>
       <width>39</width>
-      <height>23</height>
+      <height>24</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1155,7 +1155,7 @@
       <x>1</x>
       <y>9</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1256,7 +1256,7 @@
       <x>1</x>
       <y>34</y>
       <width>36</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1357,7 +1357,7 @@
       <x>1</x>
       <y>59</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
@@ -1458,7 +1458,7 @@
       <x>1</x>
       <y>84</y>
       <width>37</width>
-      <height>18</height>
+      <height>19</height>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="14.0">
         </font>
