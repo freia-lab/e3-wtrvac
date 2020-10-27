@@ -55,6 +55,7 @@ record (bo, "$(SYS)-$(SUBS):$(DEV):cmdReset") {
   field (OUT,  "@PLC:WTRVAC/$(OFFS2)+1 T=BYTE B=0")
   field (ZNAM, "Idle")
   field (HIGH, "0.5")
+  field (UDFS, "NO_ALARM")
   field (DOL,  "0")
   field (ONAM, "Reset")
   field (PINI, "YES")

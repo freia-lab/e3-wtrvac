@@ -301,6 +301,7 @@ record(bo, "CstatH-Vac:TP002:cmdReset") {
   field(ONAM, "Reset")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
 }
 
 record(bo, "CstatV-Vac:TP050:cmdReset") {
@@ -310,6 +311,7 @@ record(bo, "CstatV-Vac:TP050:cmdReset") {
   field(ONAM, "Reset")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
 }
 
 record(bo, "CstatV-Vac:TP060:cmdReset") {
@@ -319,6 +321,7 @@ record(bo, "CstatV-Vac:TP060:cmdReset") {
   field(ONAM, "Reset")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
 }
 
 # Super critical Helium valve
@@ -406,8 +409,18 @@ record(bo, "HPRF-Ctrl:Watchdog-1:cmdAlive") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:WTRVAC/135 T=BYTE B=0")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
   field(ZNAM, "Iddle")
   field(ONAM, "Alive")
+  field(PINI, "NO")
+}
+
+# LLRF software interlock
+record(bo, "LLRF-Ctrl:SoftwareIntlk:cOK") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/96 T=BYTE B=5")
+  field(ZNAM, "Fault")
+  field(ONAM, "OK")
   field(PINI, "NO")
 }
 

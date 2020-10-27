@@ -159,4 +159,5 @@ record(bo, "$(P):cmdReset") {
   field(ONAM, "Reset")
   field(PINI, "NO")
   field(HIGH, "0.5")
+  field(UDFS, "NO_ALARM")
 }
