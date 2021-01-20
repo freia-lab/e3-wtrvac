@@ -9,8 +9,8 @@ file "Interlock.template" { pattern
 {HPRF,	DBE,	ExtIntlkLoad1, 464, 	114, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw2", "Wtr Flow Guard6", "", "", "", "Watchdog-1","Test", 7}
 {HPRF,	DBE,	ExtIntlkLoad2, 468, 	116, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw16", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
 {HPRF,	DBE,	ExtIntlkCM,    472, 	118, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw4", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
-{HPRF,	PwrCpl,	WtrCIntlk,    476, 	120, "TT01", "TT02", "TT03", "TT04", "FT01", "FT02", "FT03","FT04", 7}
-{HPRF,	Kly,	WtrCIntlk,    480, 	122, "FT01", "FT02", "FT03", "FT04", "Wtr Flow Guard7", "", "","", 7}
+{HPRF,	PwrCpl,	WtrCIntlk,    476, 	120, "TT01", "TT02", "TT03", "TT04", "Wtr Flow Guard7", "Wtr Flow Guard8", "FT03","FT04", 7}
+{HPRF,	Kly,	WtrCIntlk,    480, 	122, "FT01", "FT02", "FT03", "FT04", "", "", "","", 7}
 }
 
 file "Dwtr_WFG.template" { pattern
