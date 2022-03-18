@@ -1,0 +1,81 @@
+file "TP_AI.template" { pattern
+{P,  		    SIG,	OFFS, TYP,    PREC,   EGU,   LOPR,  HOPR, H,	MAXVAL, PB_ADDR}
+{CstatH-Vac:TP001,   MotV,	248,  BYTE,   0,      "V",   0,	100,	100,	100,	5}
+{CstatH-Vac:TP001,   BearingT,	249,  BYTE,   0,      "°C",  0,	100,	100,	100,	5}
+{CstatH-Vac:TP001,   PSupplyT,	250,  BYTE,   0,      "°C",  0,	100,	100,	100,	5}
+{CstatH-Vac:TP001,   CPU_T,	251,  BYTE,   0,      "°C",  0,	100,	100,	100,	5}
+{CstatH-Vac:TP001,   MotI,	256,  UINT16, 3,      "A",   0,	10,	10000,	10,	5}
+{CstatH-Vac:TP001,   MotP,	258,  UINT16, 0,      "W",   0,	200,	200,	200,	5}
+{CstatH-Vac:TP001,   MotPLimit,	260,  UINT16, 0,      "W",   0,	200,	200,	200,	5}
+{CstatH-Vac:TP001,   Freq,	262,  UINT16, 0,      "Hz",  0,	1500,	1500,	1500,	5}
+{CstatH-Vac:TP001,   FreqSP,	264,  UINT16, 0,      "Hz",  0,	1500,	1500,	1500,	5}
+{CstatH-Vac:TP001,   NoOfStarts,266,  UINT16, 0,      "",    0,	65535,	65535,	65535,	5}
+{CstatH-Vac:TP001,   LastOnTime,268,  UINT16, 0,      "min.",0,	65535,	65535,	65535,	5}
+{CstatH-Vac:TP001,   OpTime,	270,  UINT16, 0,      "h",   0,	65535,	65535,	65535,	5}
+{CstatH-Vac:TP002,   Freq,	278,  UINT16, 0,      "Hz",  0,	1000,	1000,	1000,	6}
+{CstatV-Vac:TP050,   Freq,	742,  UINT16, 0,      "Hz",  0,	1000,	1000,	1000,	8}
+{CstatV-Vac:TP060,   Freq,	906,  UINT16, 0,      "Hz",  0,	1000,	1000,	1000,	9}
+}
+
+
+file "CtrlBitwRdBack.template" { pattern
+
+{P,                   SIG,	S_OFFS, S_BIT, S_ZNAM, S_ONAM, C_OFFS, C_BIT, C_ZNAM,   C_ONAM,	INIT_EVNT}
+{CstatH-Vac:TP002,    Remote,	276,	 7     Local,  Remote, 46,	  2,	 Local, Remote,	7}	    
+{CstatV-Vac:TP050,    Remote,	740,	 7     Local,  Remote, 144,	  2,	 Local, Remote,	7}	    
+{CstatV-Vac:TP060,    Remote,	904,	 7     Local,  Remote, 194,	  2,	 Local, Remote,	7}	    
+#{CstatH-Vac:TP002,    On,	276,	 2     OFF,    ON,     47,	  0,	 Stop,  Start,	7}	    
+}
+
+file "ArcDet.template" { pattern
+{SYS,	SUBS,	DEV,	  SIG,	    OFFS,	BIT,	ZNAM,	ONAM, DESC}
+{HPRF,	Distr,	ArcDet01, cmdReset, 98,	0,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet01, cmdTest,  98,	1,	Idle,	Test, 	 "Test Command"}
+{HPRF,	Distr,	ArcDet02, cmdReset, 98,	2,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet02, cmdTest,  98,	3,	Idle,	Test, 	 "Test Command"}
+{HPRF,	Distr,	ArcDet03, cmdReset, 98,	4,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet03, cmdTest,  98,	5,	Idle,	Test, 	 "Test Command"}
+{HPRF,	Distr,	ArcDet04, cmdReset, 98,	6,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet04, cmdTest,  98,	7,	Idle,	Test, 	 "Test Command"}
+{HPRF,	Distr,	ArcDet05, cmdReset, 99,	0,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet05, cmdTest,  99,	1,	Idle,	Test, 	 "Test Command"}
+{HPRF,	Distr,	ArcDet06, cmdReset, 99,	2,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet06, cmdTest,  99,	3,	Idle,	Test, 	 "Test Command"}
+{HPRF,	Distr,	ArcDet07, cmdReset, 99,	4,	Idle,	Reset,	 "Reset Command"}
+{HPRF,	Distr,	ArcDet07, cmdTest,  99,	5,	Idle,	Test, 	 "Test Command"}
+}
+
+file "valve_stat.template" { pattern
+{P,	        V,	  OFFS,	  B_ON,	B_OFF, ONAM_ON,   ONAM_OFF}
+{"CstatH-RHtr", "FV560",  "507",  "0",	"1",   "Open",	   "Closed" }
+{"CstatH-RHtr", "FV561",  "507",  "2",	"3",   "Open",	   "Closed" }
+{"CstatH-RHtr", "FV562",  "507",  "4",	"5",   "Open",	   "Closed" }
+{"CstatH-RHtr", "FV563",  "507",  "6",	"7",   "Open",	   "Closed" }
+}
+
+file "Interlock.template" { pattern
+{SYS,	SUBS,	DEV,	       OFFS1,	OFFS2, B0,	B1,	B2,	B3,	B4,	B5,	B6,	B7, INIT_EVNT}
+{LLRF,	Cntrl,	SlowIntlk,     440, 	102, "FREIA bunker door closed", "FREIA bunker cleared", "PwrCoupler Wtr Cooling", "External Interlock", "Klystron Wtr Cooling", "CM Cryogenics", "Software Interlock","Test", 7}
+{HPRF,	Esys,	ExtIntlkHNOSS, 444, 	104, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw13", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw2", "Watchdog-1","Test", 7}
+{HPRF,	Esys,	ExtIntlkLoad1, 448, 	106, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw1", "Wtr Flow Guard6", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	Esys,	ExtIntlkLoad2, 452, 	108, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw15", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	Esys,	ExtIntlkCM,    456, 	110, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw3", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkHNOSS, 460, 	112, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw2", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkLoad1, 464, 	114, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw2", "Wtr Flow Guard6", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkLoad2, 468, 	116, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw16", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkCM,    472, 	118, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw4", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
+{HPRF,	PwrCpl,	WtrCIntlk,    476, 	120, "TT01", "TT02", "TT03", "TT04", "Wtr Flow Guard7", "Wtr Flow Guard8", "FT03","FT04", 7}
+{HPRF,	Kly,	WtrCIntlk,    480, 	122, "FT01", "FT02", "FT03", "FT04", "", "", "","", 7}
+}
+
+file "Dwtr_WFG.template" { pattern
+{P,  		NR,	 OFFS,	B}
+{WtrC-Dwtr,	01	 506	0}
+{WtrC-Dwtr,	02	 506	1}
+{WtrC-Dwtr,	03	 506	2}
+{WtrC-Dwtr,	04	 506	3}
+{WtrC-Dwtr,	05	 506	4}
+{WtrC-Dwtr,	06	 506	5}
+{WtrC-Dwtr,	07	 506	6}
+{WtrC-Dwtr,	08	 506	7}
+}
