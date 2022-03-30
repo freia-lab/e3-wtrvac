@@ -7,4 +7,5 @@ record(ai, "CstatH-$(SUBS):$(DEV):sRdV") {
   field(EGU, "$(EGU)")
   field(HOPR, "$(LOPR)")
   field(HOPR, "$(HOPR)")
+  info(autosaveFields,"LOLO LOW HIHI HIGH")
 }

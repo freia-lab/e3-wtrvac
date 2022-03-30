@@ -40,6 +40,7 @@ record (longout, "$(SYS)-$(SUBS):$(DEV):cMask") {
   field (DTYP, "S7plc")
   field (OUT,  "@PLC:WTRVAC/$(OFFS2) T=BYTE")
   field (PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 
 record (bo, "$(SYS)-$(SUBS):$(DEV):cMask-proc") {
@@ -66,6 +67,7 @@ record (bo, "$(SYS)-$(SUBS):$(DEV):cNoLatch") {
   field (ZNAM, "Latched")
   field (ONAM, "Not Latched")
   field (PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record (bo, "$(SYS)-$(SUBS):$(DEV):cNoLatch-proc") {
   field(DTYP, "Soft Channel")

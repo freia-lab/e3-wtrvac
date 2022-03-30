@@ -1,4 +1,5 @@
 record(ai, "$(P):s$(SIG)") {
+  info(autosaveFields,"LOLO LOW HIHI HIGH")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS) T=FLOAT")
   field(PREC, $(PREC))

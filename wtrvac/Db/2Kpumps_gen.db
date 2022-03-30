@@ -123,6 +123,7 @@ record(bo, "CstatH-$(SUBS):$(DEV):cAuto") {
   field(ZNAM, "Manual")
   field(ONAM, "Auto")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 
 record(bo, "CstatH-$(SUBS):$(DEV):cAuto-proc") {
@@ -160,6 +161,7 @@ record(ao, "CstatH-$(SUBS):$(DEV)-DV:cSetV") {
   field(PREC, "2")
 #  field(FLNK, "CstatH-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "%")
+  info(autosaveFields,"VAL")
 }
 
 record(bo, "CstatH-$(SUBS):$(DEV)-DV:cSetV-proc") {
@@ -180,6 +182,7 @@ record(ao, "CstatH-$(SUBS):$(DEV)-WH:cSetV") {
   field(PREC, "2")
 #  field(FLNK, "CstatH-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "%")
+  info(autosaveFields,"VAL")
 }
 
 record(bo, "CstatH-$(SUBS):$(DEV)-WH:cSetV-proc") {
@@ -199,6 +202,7 @@ record(ao, "CstatH-$(SUBS):$(DEV)-Pressure:cSetV") {
   field(PREC, "1")
 #  field(FLNK, "CstatH-$(SUBS):$(DEV):cmdSet-link")
   field(EGU, "mbar")
+  info(autosaveFields,"VAL")
 }
 
 record(bo, "CstatH-$(SUBS):$(DEV)-Pressure:cSetV-proc") {

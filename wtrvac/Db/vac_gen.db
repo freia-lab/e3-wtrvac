@@ -221,6 +221,7 @@ record(mbbo, "CstatH-Vac:TP001:cRemote") {
   field(ONST, "Remote")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-Vac:TP001:cRemote-proc") {
   field(DTYP, "Soft Channel")
@@ -236,6 +237,7 @@ record(bo, "CstatH-Vac:TP001:cLowSpeed") {
   field(ZNAM, "NormalSpeed")
   field(ONAM, "LowSpeed")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-Vac:TP001:cLowSpeed-proc") {
   field(DTYP, "Soft Channel")
@@ -251,6 +253,7 @@ record(bo, "CstatH-Vac:TP001:cNormalStart") {
   field(ZNAM, "SoftStart")
   field(ONAM, "NormalStart")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-Vac:TP001:cNormalStart-proc") {
   field(DTYP, "Soft Channel")
@@ -268,6 +271,7 @@ record(ao, "CstatH-Vac:TP001:cHiSpeedSP") {
   field(LOPR, "1100")
   field(HOPR, "1350")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-Vac:TP001:cHiSpeedSP-proc") {
   field(DTYP, "Soft Channel")
@@ -285,6 +289,7 @@ record(ao, "CstatH-Vac:TP001:cLowSpeedSP") {
   field(LOPR, "1100")
   field(HOPR, "1350")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-Vac:TP001:cLowSpeedSP-proc") {
   field(DTYP, "Soft Channel")
@@ -332,6 +337,7 @@ record(bo, "CstatH-SHe:FV309:cOn") {
   field(ZNAM, "Close")
   field(ONAM, "Open")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-SHe:FV309:cOn-proc") {
   field(DTYP, "Soft Channel")
@@ -349,6 +355,7 @@ record(bo, "CstatH-RHtr:FV560:cOn") {
   field(ZNAM, "Close")
   field(ONAM, "Open")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-RHtr:FV560:cOn-proc") {
   field(DTYP, "Soft Channel")
@@ -364,6 +371,7 @@ record(bo, "CstatH-RHtr:FV561:cOn") {
   field(ZNAM, "Close")
   field(ONAM, "Open")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-RHtr:FV561:cOn-proc") {
   field(DTYP, "Soft Channel")
@@ -379,6 +387,7 @@ record(bo, "CstatH-RHtr:FV562:cOn") {
   field(ZNAM, "Close")
   field(ONAM, "Open")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-RHtr:FV562:cOn-proc") {
   field(DTYP, "Soft Channel")
@@ -394,6 +403,7 @@ record(bo, "CstatH-RHtr:FV563:cOn") {
   field(ZNAM, "Close")
   field(ONAM, "Open")
   field(PINI, "NO")
+  info(autosaveFields,"VAL")
 }
 record(bo, "CstatH-RHtr:FV563:cOn-proc") {
   field(DTYP, "Soft Channel")
