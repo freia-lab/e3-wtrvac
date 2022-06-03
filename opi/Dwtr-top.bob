@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
+  <name>DwtrCooling</name>
   <macros>
     <P>WtrC-Dwtr</P>
   </macros>
@@ -17,8 +18,8 @@
     <text>Deionized Water Cooling System</text>
     <x>285</x>
     <y>25</y>
-    <width>498</width>
-    <height>48</height>
+    <width>501</width>
+    <height>52</height>
     <font>
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -322,18 +323,18 @@
       <y>117</y>
       <width>463</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="462.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -345,18 +346,18 @@ $(pv_value)</tooltip>
       <y>117</y>
       <width>96</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="95.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -368,12 +369,6 @@ $(pv_value)</tooltip>
       <y>119</y>
       <width>411</width>
       <height>139</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -386,6 +381,12 @@ $(pv_value)</tooltip>
         <point x="410.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -393,7 +394,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="picture" version="2.0.0">
       <name>Image Template_1</name>
-      <file>../SymbolLibrary/PNG/Fluid/Filters/FI Filter General.png</file>
+      <file>helper-opi-files/Filter_General.png</file>
       <x>320</x>
       <y>222</y>
       <width>59</width>
@@ -407,12 +408,6 @@ $(pv_value)</tooltip>
       <y>4</y>
       <width>171</width>
       <height>101</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -423,6 +418,12 @@ $(pv_value)</tooltip>
         <point x="170.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -430,7 +431,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="picture" version="2.0.0">
       <name>Image Template</name>
-      <file>../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX Heat Exchanger with tube coil.png</file>
+      <file>helper-opi-files/HX.png</file>
       <x>215</x>
       <y>71</y>
       <width>115</width>
@@ -500,18 +501,18 @@ $(pv_value)</tooltip>
       <y>255</y>
       <width>1</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="IO Background" red="255" green="255" blue="205">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="IO Background" red="255" green="255" blue="205">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -523,18 +524,18 @@ $(pv_value)</tooltip>
       <y>257</y>
       <width>95</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="94.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -722,8 +723,8 @@ $(pv_value)</tooltip>
 circuit</text>
       <x>215</x>
       <y>11</y>
-      <width>88</width>
-      <height>56</height>
+      <width>89</width>
+      <height>63</height>
       <font>
         <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
         </font>
@@ -849,18 +850,18 @@ circuit</text>
       <y>120</y>
       <width>316</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="315.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -872,18 +873,18 @@ $(pv_value)</tooltip>
       <y>120</y>
       <width>61</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="60.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -895,12 +896,6 @@ $(pv_value)</tooltip>
       <y>6</y>
       <width>171</width>
       <height>100</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -911,6 +906,12 @@ $(pv_value)</tooltip>
         <point x="170.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -918,7 +919,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="picture" version="2.0.0">
       <name>Image Template</name>
-      <file>../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX Heat Exchanger with tube coil.png</file>
+      <file>helper-opi-files/HX.png</file>
       <x>165</x>
       <y>74</y>
       <width>115</width>
@@ -987,8 +988,8 @@ $(pv_value)</tooltip>
 circuit</text>
       <x>150</x>
       <y>10</y>
-      <width>111</width>
-      <height>49</height>
+      <width>112</width>
+      <height>55</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -1047,18 +1048,18 @@ circuit</text>
       <y>120</y>
       <width>316</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="315.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -1070,18 +1071,18 @@ $(pv_value)</tooltip>
       <y>120</y>
       <width>61</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="60.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -1093,12 +1094,6 @@ $(pv_value)</tooltip>
       <y>6</y>
       <width>171</width>
       <height>100</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <arrows>1</arrows>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -1109,6 +1104,12 @@ $(pv_value)</tooltip>
         <point x="170.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <arrows>1</arrows>
       <actions>
       </actions>
       <tooltip>$(pv_name)
@@ -1116,7 +1117,7 @@ $(pv_value)</tooltip>
     </widget>
     <widget type="picture" version="2.0.0">
       <name>Image Template</name>
-      <file>../SymbolLibrary/PNG/Fluid/Heat_Exchangers/HX Heat Exchanger with tube coil.png</file>
+      <file>helper-opi-files/HX.png</file>
       <x>165</x>
       <y>74</y>
       <width>115</width>
@@ -1303,8 +1304,8 @@ $(pv_value)</tooltip>
 circuit</text>
       <x>150</x>
       <y>10</y>
-      <width>118</width>
-      <height>49</height>
+      <width>119</width>
+      <height>55</height>
       <font>
         <font name="Header 3" family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
