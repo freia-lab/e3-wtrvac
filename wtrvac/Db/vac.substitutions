@@ -12,11 +12,14 @@ file "TP_AI.template" { pattern
 {CstatH-Vac:TP001,   NoOfStarts,266,  UINT16, 0,      "",    0,	65535,	65535,	65535,	5}
 {CstatH-Vac:TP001,   LastOnTime,268,  UINT16, 0,      "min.",0,	65535,	65535,	65535,	5}
 {CstatH-Vac:TP001,   OpTime,	270,  UINT16, 0,      "h",   0,	65535,	65535,	65535,	5}
-{CstatH-Vac:TP002,   Freq,	278,  UINT16, 0,      "Hz",  0,	1000,	1000,	1000,	6}
-{CstatV-Vac:TP050,   Freq,	742,  UINT16, 0,      "Hz",  0,	1000,	1000,	1000,	8}
-{CstatV-Vac:TP060,   Freq,	906,  UINT16, 0,      "Hz",  0,	1000,	1000,	1000,	9}
 }
 
+file "TP_TD20.template" { pattern
+{P,  			OFFS,	PB_ADDR}
+{CstatH-Vac:TP002,   	278,  	6}
+{CstatV-Vac:TP050,   	742,  	8}
+{CstatV-Vac:TP060,   	906,  	9}
+}
 
 file "CtrlBitwRdBack.template" { pattern
 

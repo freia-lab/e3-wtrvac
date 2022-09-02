@@ -61,8 +61,14 @@ TEMPLATES += $(wildcard $(APPDB)/*.proto)
 
 SCRIPTS += $(wildcard ../iocsh/*.iocsh)
 
+# Same as with any source or header files, you can also use $SUBS and $TMPS to define
+# database files to be inflated (using MSI), e.g.
+#
+#     SUBS = $(wildcard $(APPDB)/*.substitutions)
+#     TMPS = $(wildcard $(APPDB)/*.template)
+
 SUBS = $(wildcard $(APPDB)/*.substitutions)
-TMPS = $(wildcard $(APPDB)/*.template)
+#TMPS = $(wildcard $(APPDB)/*.template)
 
 USR_DBFLAGS += -I . -I ..
 USR_DBFLAGS += -I $(EPICS_BASE)/db
