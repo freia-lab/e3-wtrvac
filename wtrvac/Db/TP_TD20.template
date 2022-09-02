@@ -17,7 +17,7 @@ record(ai, "$(P):sFreq") {
 record(ai, "$(P):sOpTime") {
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+2 T=UINT32")
-  field(PREC, "0")
+  field(PREC, "2")
   field(PINI, "YES")
   field(SCAN, "I/O Intr")
   field(LINR, "LINEAR")
@@ -41,7 +41,7 @@ record(ai, "$(P):sMotV") {
   field(EGUF, "6553.5")
   field(EGU, "V")
   field(LOPR, "0")
-  field(HOPR, "1000")
+  field(HOPR, "100")
   field(DISV, "-1") # Will never disable, but will propagate severity
   field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
