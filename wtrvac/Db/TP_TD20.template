@@ -1,4 +1,5 @@
 record(ai, "$(P):sFreq") {
+  field(DESC, "Actual frequency")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS) T=UINT16 H=1000")
   field(PREC, "0")
@@ -15,6 +16,7 @@ record(ai, "$(P):sFreq") {
 }
 
 record(ai, "$(P):sOpTime") {
+  field(DESC, "Active pump operation")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+2 T=UINT32")
   field(PREC, "2")
@@ -31,6 +33,7 @@ record(ai, "$(P):sOpTime") {
 }
 
 record(ai, "$(P):sMotV") {
+  field(DESC, "DC supply voltage")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+6 T=UINT16")
   field(PREC, "1")
@@ -42,11 +45,13 @@ record(ai, "$(P):sMotV") {
   field(EGU, "V")
   field(LOPR, "0")
   field(HOPR, "100")
+  field(ADEL, "0.2")
   field(DISV, "-1") # Will never disable, but will propagate severity
   field(SDIS, "PLC-WTRVAC:Ctrl-PB:sErr-$(PB_ADDR).VAL NPP MS")
 }
 
 record(ai, "$(P):sBearingT") {
+  field(DESC, "Pump housing temperature")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+8 T=UINT16")
   field(PREC, "0")
@@ -68,6 +73,7 @@ record(ai, "$(P):sBearingT") {
 }
 
 record(ai, "$(P):sCPU_T") {
+  field(DESC, "Controller's temperature")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+10 T=UINT16")
   field(PREC, "0")
@@ -84,6 +90,7 @@ record(ai, "$(P):sCPU_T") {
 }
 
 record(ai, "$(P):sMotI") {
+  field(DESC, "Motor current (RMS)")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+12 T=UINT16")
   field(PREC, "1")
@@ -100,6 +107,7 @@ record(ai, "$(P):sMotI") {
 }
 
 record(ai, "$(P):sFreqSP") {
+  field(DESC, "Frequency set-point")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+14 T=UINT16")
   field(PREC, "0")
@@ -116,6 +124,7 @@ record(ai, "$(P):sFreqSP") {
 }
 
 record(ai, "$(P):sNoOfStarts") {
+  field(DESC, "Start counter")
   field(DTYP, "S7plc")
   field(INP, "@PLC:WTRVAC/$(OFFS)+16 T=UINT16")
   field(PREC, "0")
