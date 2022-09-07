@@ -3,7 +3,7 @@ record (bo, "$(SYS)-$(SUBS):$(DEV):$(SIG)") {
   field (DTYP, "S7plc")
   field (OUT,  "@PLC:WTRVAC/$(OFFS) T=BYTE B=$(BIT)")
   field (ZNAM, "$(ZNAM)")
-  field (HIGH, "0.5")
+  field (HIGH, "1.0")
   field (UDFS, "NO_ALARM")
   field (DOL,  "0")
   field (ONAM, "$(ONAM)")

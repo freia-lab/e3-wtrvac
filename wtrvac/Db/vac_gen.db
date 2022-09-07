@@ -305,7 +305,7 @@ record(bo, "CstatH-Vac:TP002:cmdReset") {
   field(ZNAM, "Iddle")
   field(ONAM, "Reset")
   field(PINI, "NO")
-  field(HIGH, "0.5")
+  field(HIGH, "1.0")
   field(UDFS, "NO_ALARM")
 }
 
@@ -315,7 +315,7 @@ record(bo, "CstatV-Vac:TP050:cmdReset") {
   field(ZNAM, "Iddle")
   field(ONAM, "Reset")
   field(PINI, "NO")
-  field(HIGH, "0.5")
+  field(HIGH, "1.0")
   field(UDFS, "NO_ALARM")
 }
 
@@ -325,7 +325,7 @@ record(bo, "CstatV-Vac:TP060:cmdReset") {
   field(ZNAM, "Iddle")
   field(ONAM, "Reset")
   field(PINI, "NO")
-  field(HIGH, "0.5")
+  field(HIGH, "1.0")
   field(UDFS, "NO_ALARM")
 }
 
@@ -418,7 +418,7 @@ record(bo, "CstatH-RHtr:FV563:cOn-proc") {
 record(bo, "HPRF-Ctrl:Watchdog-1:cmdAlive") {
   field(DTYP, "S7plc")
   field(OUT, "@PLC:WTRVAC/135 T=BYTE B=0")
-  field(HIGH, "0.5")
+  field(HIGH, "1.0")
   field(UDFS, "NO_ALARM")
   field(ZNAM, "Iddle")
   field(ONAM, "Alive")

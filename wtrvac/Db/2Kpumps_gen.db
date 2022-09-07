@@ -113,7 +113,7 @@ record(bo, "CstatH-$(SUBS):$(DEV):cmdReset") {
   field(ZNAM, "Iddle")
   field(ONAM, "Reset")
   field(PINI, "NO")
-  field(HIGH, "0.5")
+  field(HIGH, "1.0")
   field(UDFS, "NO_ALARM")
 }
 
