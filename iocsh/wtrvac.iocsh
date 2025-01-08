@@ -33,7 +33,7 @@ dbLoadRecords("2Kpumps_gen.db", "SUBS=2Kpumps, DEV=Ctrl, OFFS=0, OFFS2=0")
 dbLoadRecords("2Kpumps.db")
 dbLoadRecords("Dwater_gen.db", "INIT_EVNT=7")
 dbLoadRecords("Dwater.db")
-dbLoadRecords("vac.db")
+dbLoadRecords("vac.db", "INIT_EVNT=7")
 dbLoadRecords("vac_gen.db", "INIT_EVNT=7")
 
 iocshLoad("$(autosave_DIR)/autosave.iocsh", "AS_TOP=$(TOP),IOCNAME=$(IOCNAME),IOCDIR=wtrvac")

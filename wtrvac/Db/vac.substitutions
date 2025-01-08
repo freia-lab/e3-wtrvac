@@ -48,12 +48,12 @@ file "ArcDet.template" { pattern
 {HPRF,	Distr,	ArcDet07, cmdTest,  99,	5,	Idle,	Test, 	 "Test Command"}
 }
 
-file "valve_stat.template" { pattern
-{P,	        V,	  OFFS,	  B_ON,	B_OFF, ONAM_ON,   ONAM_OFF}
-{"CstatH-RHtr", "FV560",  "507",  "0",	"1",   "Open",	   "Closed" }
-{"CstatH-RHtr", "FV561",  "507",  "2",	"3",   "Open",	   "Closed" }
-{"CstatH-RHtr", "FV562",  "507",  "4",	"5",   "Open",	   "Closed" }
-{"CstatH-RHtr", "FV563",  "507",  "6",	"7",   "Open",	   "Closed" }
+file "valve_reheater.template" { pattern
+{P,	        V,	  OFFS,	  B_ON,	B_OFF, ONAM_ON,   ONAM_OFF  OFFSCTRL B_CTRL}
+{"CstatH-RHtr", "FV560",  "507",  "0",	"1",   "Open",	   "Closed" "96"     "1"}
+{"CstatH-RHtr", "FV561",  "507",  "2",	"3",   "Open",	   "Closed" "96"     "2"}
+{"CstatH-RHtr", "FV562",  "507",  "4",	"5",   "Open",	   "Closed" "96"     "3"}
+{"CstatH-RHtr", "FV563",  "507",  "6",	"7",   "Open",	   "Closed" "96"     "4"}
 }
 
 file "Interlock.template" { pattern

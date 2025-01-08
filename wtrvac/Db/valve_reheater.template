@@ -34,3 +34,32 @@ record (mbbi, "$(P):$(V):VisuState") {
   field(ZRSV,"MAJOR")
   field(THSV,"MAJOR")
 }
+
+record(bo, "$(P):$(V):cOn") {
+  field(DTYP, "S7plc")
+  field(OUT, "@PLC:WTRVAC/$(OFFSCTRL) T=BYTE B=$(B_CTRL)")
+  field(ZNAM, "Close")
+  field(ONAM, "Open")
+  field(DOL, "$(P):$(V):sOpenReq PP MS")
+  field(IVOA, "Don't drive outputs")
+  field(PINI, "NO")
+  info(autosaveFields,"VAL OMSL")
+}
+
+record(bo, "$(P):$(V):cOn-proc") {
+  field(DTYP, "Soft Channel")
+  field(SCAN, "Event")
+  field(EVNT, "$(INIT_EVNT)")
+  field(PINI, "NO")
+  field(FLNK, "$(P):$(V):cOn")
+}
+
+record(bo, "$(P):$(V):cAuto") {
+  field(OUT, "$(P):$(V):cOn.OMSL PP")
+  field(FLNK, "$(P):$(V):cOn")
+  field(ZNAM, "Manual")
+  field(ONAM, "Auto")
+  field(PINI, "YES")
+  info(autosaveFields,"VAL")
+}
+
