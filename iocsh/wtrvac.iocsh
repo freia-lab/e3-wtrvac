@@ -52,7 +52,3 @@ afterInit("dbpf" "WtrC-Dwtr:Kly-FT04:sRdV.DESC" "Cooling water flow: coil")
 
 # Needed when OMSL = "Closed loop" in order to avoid INVALID LINK status
 afterInit("epicsThreadSleep" "1.0")
-afterInit("dbpf" "CstatH-RHtr:FV560:cAuto.PROC" "1")
-afterInit("dbpf" "CstatH-RHtr:FV561:cAuto.PROC" "1")
-afterInit("dbpf" "CstatH-RHtr:FV562:cAuto.PROC" "1")
-afterInit("dbpf" "CstatH-RHtr:FV563:cAuto.PROC" "1")
