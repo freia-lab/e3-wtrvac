@@ -51,16 +51,23 @@ file "ArcDet.template" { pattern
 file "Interlock.template" { pattern
 {SYS,	SUBS,	DEV,	       OFFS1,	OFFS2, B0,	B1,	B2,	B3,	B4,	B5,	B6,	B7, INIT_EVNT}
 {LLRF,	Cntrl,	SlowIntlk,     440, 	102, "FREIA bunker door closed", "FREIA bunker cleared", "PwrCoupler Wtr Cooling", "External Interlock", "Mobile LLRF", "CM Cryogenics", "Software Interlock","Test", 7}
-{HPRF,	Esys,	ExtIntlkHNOSS, 444, 	104, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw13", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw2", "Watchdog-1","Test", 7}
-{HPRF,	Esys,	ExtIntlkLoad1, 448, 	106, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw1", "Wtr Flow Guard6", "", "", "", "Watchdog-1","Test", 7}
-{HPRF,	Esys,	ExtIntlkLoad2, 452, 	108, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw15", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
-{HPRF,	Esys,	ExtIntlkCM,    456, 	110, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw3", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
-{HPRF,	DBE,	ExtIntlkHNOSS, 460, 	112, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw2", "Watchdog-1","Test", 7}
-{HPRF,	DBE,	ExtIntlkLoad1, 464, 	114, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw2", "Wtr Flow Guard6", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	SSA_A,	ExtIntlkHNOSS, 444, 	104, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw13", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw1", "Watchdog-1","Test", 7}
+{HPRF,	SSA_A,	ExtIntlkTest,  448, 	106, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw13", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw1", "", "Watchdog-1","Test", 7}
+{HPRF,	SSA_A,	ExtIntlkLoad2, 452, 	108, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw15", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	SSA_A,	ExtIntlkCM,    456, 	110, "RFSwitchBoard1 Sw5", "RFSwitchBoard1 Sw3", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkHNOSS, 460, 	112, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw1", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkTest,  464, 	114, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw1", "", "Watchdog-1","Test", 7}
 {HPRF,	DBE,	ExtIntlkLoad2, 468, 	116, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw16", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
 {HPRF,	DBE,	ExtIntlkCM,    472, 	118, "RFSwitchBoard1 Sw8", "RFSwitchBoard1 Sw4", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
-{HPRF,	PwrCpl,	WtrCIntlk,    476, 	120, "TT01", "TT02", "TT03", "TT04", "Wtr Flow Guard7", "Wtr Flow Guard8", "FT03","FT04", 7}
-{LLRF,	Mobile,	Intlk,        480, 	122, "FREIA bunker door closed", "FREIA bunker cleared", "", "", "", "", "","", 7}
+{HPRF,	PwrCpl,	WtrCIntlk,     476, 	120, "TT01", "TT02", "TT03", "TT04", "Wtr Flow Guard7", "Wtr Flow Guard8", "FT03","FT04", 7}
+{LLRF,	Mobile,	Intlk,         480, 	122, "FREIA bunker door closed", "FREIA bunker cleared", "", "", "", "", "","", 7}
+{HPRF,	SSA_B,	ExtIntlkHNOSS, 484, 	124, "RFSwitchBoard1 Path", "", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw1", "Watchdog-1","Test", 7}
+{HPRF,	SSA_B,	ExtIntlkTest,  488, 	126, "RFSwitchBoard1 Path", "", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw1", "", "Watchdog-1","Test", 7}
+{HPRF,	SSA_B,	ExtIntlkLoad2, 492, 	128, "RFSwitchBoard1 Path", "", "Wtr Flow Guard5", "", "", "", "Watchdog-1","Test", 7}
+{HPRF,	SSA_B,	ExtIntlkCM,    496, 	130, "RFSwitchBoard1 Path", "", "Wtr Flow Guard1", "Wtr Flow Guard2", "", "", "Watchdog-1","Test", 7}
+{HPRF,	SSA_A,	ExtIntlkCM2,  1070, 	244, "RFSwitchBoard1 Sw9", "RFSwitchBoard1 Sw13", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw2", "Watchdog-1","Test", 7}
+{HPRF,	DBE,	ExtIntlkCM2,  1074, 	246, "RFSwitchBoard1 Sw12", "RFSwitchBoard1 Sw14", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw1", "Watchdog-1","Test", 7}
+{HPRF,	SSA_B,	ExtIntlkCM2,  1078, 	248, "RFSwitchBoard1 Path", "", "Wtr Flow Guard3", "Wtr Flow Guard4", "RFSwitchBoard2 Sw2", "RFSwitchBoard3 Sw1", "Watchdog-1","Test", 7}
 }
 
 file "Dwtr_WFG.template" { pattern
