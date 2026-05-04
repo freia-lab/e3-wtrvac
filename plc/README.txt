@@ -13,3 +13,4 @@ Water_v2-2026-04-23.zip - Added new items to the EPICS data blocks (DB100, DB101
 Water_v2-2026-04-30.zip - New MMC (Micro Memory Card) 128 kB. Added slow interlocks for the IBA SSA. 
       Added RF path to be set to the correct value (corresponding to the
       interlock for a given path. Removed all stuff used by Electrosys (now it's used by SSA A).
+Water_v2-2026-05-04.zip - Fixed an error in the slow interlock logic for the DBE station (FC204).

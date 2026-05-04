@@ -561,7 +561,7 @@ record (mbbo, "HPRF-Esys:APS:STAT") {
 record (mbbo, "HPRF-RFpath:SSA_A:cSelect") {
   field(DESC, "Recipient of RF Power") 
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:WTRVAC/250 T=BYTE")
+  field(OUT, "@PLC:WTRVAC/250 T=WORD")
   field (SCAN, "Passive")
   field (NOBT, 8)
   field (ZRVL, 0)
@@ -582,7 +582,7 @@ record (mbbo, "HPRF-RFpath:SSA_A:cSelect") {
 record (mbbo, "HPRF-RFpath:DBE:cSelect") {
   field(DESC, "Recipient of RF Power") 
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:WTRVAC/251 T=BYTE")
+  field(OUT, "@PLC:WTRVAC/252 T=WORD")
   field (SCAN, "Passive")
   field (NOBT, 8)
   field (ZRVL, 0)
@@ -603,7 +603,7 @@ record (mbbo, "HPRF-RFpath:DBE:cSelect") {
 record (mbbo, "HPRF-RFpath:SSA_B:cSelect") {
   field(DESC, "Recipient of RF Power") 
   field(DTYP, "S7plc")
-  field(OUT, "@PLC:WTRVAC/252 T=BYTE")
+  field(OUT, "@PLC:WTRVAC/254 T=WORD")
   field (SCAN, "Passive")
   field (NOBT, 8)
   field (ZRVL, 0)
@@ -624,7 +624,7 @@ record (mbbo, "HPRF-RFpath:SSA_B:cSelect") {
 record (mbbi, "HPRF-RFpath:SSA_A:sSelect") {
   field(DESC, "Recipient of RF Power") 
   field(DTYP, "S7plc")
-  field(INP, "@PLC:WTRVAC/1082 T=BYTE")
+  field(INP, "@PLC:WTRVAC/1082 T=WORD")
   field (SCAN, "I/O Intr")
   field (NOBT, 8)
   field (ZRVL, 0)
@@ -643,7 +643,7 @@ record (mbbi, "HPRF-RFpath:SSA_A:sSelect") {
 record (mbbi, "HPRF-RFpath:DBE:sSelect") {
   field(DESC, "Recipient of RF Power") 
   field(DTYP, "S7plc")
-  field(INP, "@PLC:WTRVAC/1083 T=BYTE")
+  field(INP, "@PLC:WTRVAC/1084 T=WORD")
   field (SCAN, "I/O Intr")
   field (NOBT, 8)
   field (ZRVL, 0)
@@ -662,7 +662,7 @@ record (mbbi, "HPRF-RFpath:DBE:sSelect") {
 record (mbbi, "HPRF-RFpath:SSA_B:sSelect") {
   field(DESC, "Recipient of RF Power") 
   field(DTYP, "S7plc")
-  field(INP, "@PLC:WTRVAC/1084 T=BYTE")
+  field(INP, "@PLC:WTRVAC/1086 T=WORD")
   field (SCAN, "I/O Intr")
   field (NOBT, 8)
   field (ZRVL, 0)
