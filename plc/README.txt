@@ -14,3 +14,4 @@ Water_v2-2026-04-30.zip - New MMC (Micro Memory Card) 128 kB. Added slow interlo
       Added RF path to be set to the correct value (corresponding to the
       interlock for a given path. Removed all stuff used by Electrosys (now it's used by SSA A).
 Water_v2-2026-05-04.zip - Fixed an error in the slow interlock logic for the DBE station (FC204).
+Water_v2-2026-05-05.zip - Added FREIA bunker cleared condition to the slow interlocks (FC204, DB197).
